@@ -3,11 +3,11 @@ package controller;
 
 import java.util.Calendar;
 import model.LojaDepartamento;
-import serializacao.Serializacao;
 
 
 import model.Cliente;
 import model.Usuario;
+import model.Vendedor;
 
 /**
  *
@@ -23,15 +23,13 @@ public class ControladorUsuario {
         String nome, 
         String cpf, 
         String rg, 
-        String dia,
-        String mes,
-        String ano,
+        String dia, String mes, String ano,
         String endereco, 
         String cep, 
         String email) {
         
-        Calendar date = Calendar.getInstance();
-        date.set(Integer.parseInt(ano), 
+        Calendar data = Calendar.getInstance();
+        data.set(Integer.parseInt(ano), 
                 Integer.parseInt(mes), 
                 Integer.parseInt(dia));
         
@@ -41,12 +39,52 @@ public class ControladorUsuario {
                 nome,
                 cpf,
                 rg,
-                date,
+                data,
                 endereco,
                 cep,
                 email
         );
         
         LojaDepartamento.addUsuario(cliente);
+    }
+    
+    public void addUsuario(
+        float salario,
+        String pis,
+        String diaA, String mesA, String anoA,
+        int codigo, 
+        String nome, 
+        String cpf, 
+        String rg, 
+        String diaN, String mesN, String anoN,
+        String endereco, 
+        String cep, 
+        String email) {
+        
+        Calendar dataN = Calendar.getInstance();
+        dataN.set(Integer.parseInt(anoN), 
+                Integer.parseInt(mesN), 
+                Integer.parseInt(diaN));
+        
+        Calendar dataA = Calendar.getInstance();
+        dataA.set(Integer.parseInt(anoA), 
+                Integer.parseInt(mesA), 
+                Integer.parseInt(diaA));
+        
+        Usuario vendedor = new Vendedor(
+                salario,
+                pis,
+                dataA,
+                codigo,
+                nome,
+                cpf,
+                rg,
+                dataN,
+                endereco,
+                cep,
+                email
+        );
+        
+        LojaDepartamento.addUsuario(vendedor);
     }
 }
