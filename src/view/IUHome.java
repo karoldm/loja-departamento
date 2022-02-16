@@ -30,11 +30,8 @@ public class IUHome extends javax.swing.JFrame {
         jMenuCadastrar = new javax.swing.JMenu();
         jMenuItemCadastrarCliente = new javax.swing.JMenuItem();
         jMenuItemCadastrarVendedor = new javax.swing.JMenuItem();
+        jMenuItemCadastrarFornecedor = new javax.swing.JMenuItem();
         jMenuCadastrarProduto = new javax.swing.JMenu();
-        jMenuItemCadastrarVestuario = new javax.swing.JMenuItem();
-        jMenuItemCadastrarEletronico = new javax.swing.JMenuItem();
-        jMenuItemCadastrarEletrodomestico = new javax.swing.JMenuItem();
-        jMenuItemCadastrarAlimentacao = new javax.swing.JMenuItem();
         jMenuConsultar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,20 +54,15 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuCadastrar.add(jMenuItemCadastrarVendedor);
 
+        jMenuItemCadastrarFornecedor.setText("fornecedor");
+        jMenuItemCadastrarFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadastrarFornecedorActionPerformed(evt);
+            }
+        });
+        jMenuCadastrar.add(jMenuItemCadastrarFornecedor);
+
         jMenuCadastrarProduto.setText("produto");
-
-        jMenuItemCadastrarVestuario.setText("vestuario");
-        jMenuCadastrarProduto.add(jMenuItemCadastrarVestuario);
-
-        jMenuItemCadastrarEletronico.setText("eletrônico");
-        jMenuCadastrarProduto.add(jMenuItemCadastrarEletronico);
-
-        jMenuItemCadastrarEletrodomestico.setText("eletrodoméstico");
-        jMenuCadastrarProduto.add(jMenuItemCadastrarEletrodomestico);
-
-        jMenuItemCadastrarAlimentacao.setText("alimentação");
-        jMenuCadastrarProduto.add(jMenuItemCadastrarAlimentacao);
-
         jMenuCadastrar.add(jMenuCadastrarProduto);
 
         jMenuBar1.add(jMenuCadastrar);
@@ -109,6 +101,14 @@ public class IUHome extends javax.swing.JFrame {
         cad.setVisible(true);
         
     }//GEN-LAST:event_jMenuItemCadastrarVendedorActionPerformed
+
+    private void jMenuItemCadastrarFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarFornecedorActionPerformed
+        
+        IUCadastrarFornecedor cad = new IUCadastrarFornecedor(this, true);
+        cad.setLocationRelativeTo(this);
+        cad.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemCadastrarFornecedorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,11 +151,8 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenu jMenuCadastrar;
     private javax.swing.JMenu jMenuCadastrarProduto;
     private javax.swing.JMenu jMenuConsultar;
-    private javax.swing.JMenuItem jMenuItemCadastrarAlimentacao;
     private javax.swing.JMenuItem jMenuItemCadastrarCliente;
-    private javax.swing.JMenuItem jMenuItemCadastrarEletrodomestico;
-    private javax.swing.JMenuItem jMenuItemCadastrarEletronico;
+    private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
     private javax.swing.JMenuItem jMenuItemCadastrarVendedor;
-    private javax.swing.JMenuItem jMenuItemCadastrarVestuario;
     // End of variables declaration//GEN-END:variables
 }

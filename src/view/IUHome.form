@@ -25,32 +25,18 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemCadastrarVendedorActionPerformed"/>
               </Events>
             </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadastrarFornecedor">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="fornecedor"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemCadastrarFornecedorActionPerformed"/>
+              </Events>
+            </MenuItem>
             <Menu class="javax.swing.JMenu" name="jMenuCadastrarProduto">
               <Properties>
                 <Property name="text" type="java.lang.String" value="produto"/>
               </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadastrarVestuario">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="vestuario"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadastrarEletronico">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="eletr&#xf4;nico"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadastrarEletrodomestico">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="eletrodom&#xe9;stico"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCadastrarAlimentacao">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="alimenta&#xe7;&#xe3;o"/>
-                  </Properties>
-                </MenuItem>
-              </SubComponents>
             </Menu>
           </SubComponents>
         </Menu>
