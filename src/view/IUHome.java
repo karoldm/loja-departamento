@@ -31,7 +31,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemCadastrarCliente = new javax.swing.JMenuItem();
         jMenuItemCadastrarVendedor = new javax.swing.JMenuItem();
         jMenuItemCadastrarFornecedor = new javax.swing.JMenuItem();
-        jMenuCadastrarProduto = new javax.swing.JMenu();
+        jMenuItemCadastrarProduto = new javax.swing.JMenuItem();
         jMenuConsultar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -62,8 +62,13 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuCadastrar.add(jMenuItemCadastrarFornecedor);
 
-        jMenuCadastrarProduto.setText("produto");
-        jMenuCadastrar.add(jMenuCadastrarProduto);
+        jMenuItemCadastrarProduto.setText("produto");
+        jMenuItemCadastrarProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadastrarProdutoActionPerformed(evt);
+            }
+        });
+        jMenuCadastrar.add(jMenuItemCadastrarProduto);
 
         jMenuBar1.add(jMenuCadastrar);
 
@@ -110,6 +115,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemCadastrarFornecedorActionPerformed
 
+    private void jMenuItemCadastrarProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarProdutoActionPerformed
+        
+        IUCadastrarProduto cad = new IUCadastrarProduto(this, true);
+        cad.setLocationRelativeTo(this);
+        cad.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemCadastrarProdutoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -149,10 +162,10 @@ public class IUHome extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuCadastrar;
-    private javax.swing.JMenu jMenuCadastrarProduto;
     private javax.swing.JMenu jMenuConsultar;
     private javax.swing.JMenuItem jMenuItemCadastrarCliente;
     private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
+    private javax.swing.JMenuItem jMenuItemCadastrarProduto;
     private javax.swing.JMenuItem jMenuItemCadastrarVendedor;
     // End of variables declaration//GEN-END:variables
 }

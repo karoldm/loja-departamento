@@ -35,7 +35,7 @@ public class FactoryProduto {
                     valor,
                     fornecedor,
                     disponivel);
-            case "eletrodoméstico": return new Eletrodomestico(
+            case "eletrodomestico": return new Eletrodomestico(
                     codigoProduto,
                     nome,
                     descricao,

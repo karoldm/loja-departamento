@@ -36,6 +36,7 @@ public class LojaDepartamento {
     }
 
     public static ArrayList<Fornecedor> getFornecedores() {
+        fornecedores = Serializacao.read(configuracao.getArquivoFornecedores());
         return fornecedores;
     }
 
@@ -61,5 +62,15 @@ public class LojaDepartamento {
         fornecedores = Serializacao.read(configuracao.getArquivoFornecedores());
         fornecedores.add(fornecedor);
         Serializacao.write(fornecedores, configuracao.getArquivoFornecedores());
+    }
+    
+    public static void addProduto(Produto produto){
+        produtos = Serializacao.read(configuracao.getArquivoProdutos());
+        produtos.add(produto);
+        Serializacao.write(produtos, configuracao.getArquivoProdutos());
+    }
+    
+    public static int getTamanhoProdutos(){
+        return Serializacao.read(configuracao.getArquivoProdutos()).size();
     }
 }

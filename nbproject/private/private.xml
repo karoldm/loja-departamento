@@ -9,6 +9,7 @@
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUHome.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/model/Fornecedor.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUCadastrarVendedor.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUCadastrarProduto.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/controller/ControladorProduto.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/loja/Main.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/factory/FactoryProduto.java</file>
@@ -17,6 +18,7 @@
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/model/LojaDepartamento.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/controller/ControladorUsuario.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/serializacao/Serializacao.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUCadastrarFornecedor.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/model/Vendedor.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/model/Produto.java</file>
         </group>
