@@ -80,4 +80,12 @@ public class ControladorProduto {
         LojaDepartamento.addProduto(produto);
         
     }
+    
+    public int getTamanhoProdutos(){
+        return LojaDepartamento.getTamanhoProdutos();
+    }
+    
+    public int getTamanhoFornecedores(){
+        return LojaDepartamento.getTamanhoFornecedores();
+    }
 }

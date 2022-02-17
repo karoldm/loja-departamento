@@ -268,7 +268,7 @@ public class IUCadastrarProduto extends javax.swing.JDialog {
                 tipoProduto,
                 disponivel);
 
-            JOptionPane.showMessageDialog(null, "Vendedor cadastrado com sucesso!", null, JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Produto cadastrado com sucesso!", null, JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
         }
         else{

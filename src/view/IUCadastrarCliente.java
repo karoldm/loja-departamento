@@ -18,7 +18,8 @@ public class IUCadastrarCliente extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        jTextCodigo.setText(Integer.toString(LojaDepartamento.getTamanhoUsuarios()));
+        ControladorUsuario controller = new ControladorUsuario();
+        jTextCodigo.setText(Integer.toString(controller.getTamanhoUsuarios()));
     }
 
     /**

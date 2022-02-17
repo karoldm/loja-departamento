@@ -87,4 +87,8 @@ public class ControladorUsuario {
         
         LojaDepartamento.addUsuario(vendedor);
     }
+    
+    public int getTamanhoUsuarios(){
+        return LojaDepartamento.getTamanhoUsuarios();
+    }
 }

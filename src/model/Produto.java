@@ -1,13 +1,14 @@
 
 package model;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 /**
  *
  * @author karol
  */
-public abstract class Produto {
+public abstract class Produto implements Serializable{
     protected int codigoProduto;
     protected String nome;
     protected String descricao;

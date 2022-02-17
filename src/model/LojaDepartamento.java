@@ -64,6 +64,10 @@ public class LojaDepartamento {
         Serializacao.write(fornecedores, configuracao.getArquivoFornecedores());
     }
     
+    public static int getTamanhoFornecedores(){
+        return Serializacao.read(configuracao.getArquivoFornecedores()).size();
+    }
+    
     public static void addProduto(Produto produto){
         produtos = Serializacao.read(configuracao.getArquivoProdutos());
         produtos.add(produto);
