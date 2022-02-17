@@ -35,6 +35,8 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Loja Departamento");
+        setResizable(false);
 
         jMenuCadastrar.setText("cadastrar");
 

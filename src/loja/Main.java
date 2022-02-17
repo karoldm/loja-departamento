@@ -16,11 +16,9 @@ public class Main {
     
     public static void main(String[] args){
         IUHome home = new IUHome();
-        home.setVisible(true);
+        home.setLocationRelativeTo(null);
         home.setTitle(LojaDepartamento.getNomeLoja());
-//        
-//        ArrayList<Usuario> users = Serializacao.read(LojaDepartamento.getConfiguracao().getArquivoUsuarios());
-//        
-//        for(Usuario i: users) System.out.println(i);
+        home.setVisible(true);
+        
     }
 }
