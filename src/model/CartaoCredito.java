@@ -1,4 +1,3 @@
-
 package model;
 
 /**
@@ -6,9 +5,14 @@ package model;
  * @author karol
  */
 public class CartaoCredito extends Pagamento {
+
     private String nome;
     private String bandeira;
     private String numero;
+
+    public CartaoCredito() {
+        super("Cartão de Crédito");
+    }
 
     public CartaoCredito(String nome, String bandeira, String numero) {
         super("Cartão de Crédito");
@@ -40,9 +44,9 @@ public class CartaoCredito extends Pagamento {
     public void setNumero(String numero) {
         this.numero = numero;
     }
-    
+
     @Override
-    public String toString(){
-        return("Tipo de Pagamento: " + super.getTipoPagamento());
+    public String toString() {
+        return ("Tipo de Pagamento: " + super.getTipoPagamento());
     }
 }

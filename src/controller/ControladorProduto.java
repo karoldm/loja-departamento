@@ -88,4 +88,11 @@ public class ControladorProduto {
     public int getTamanhoFornecedores(){
         return LojaDepartamento.getTamanhoFornecedores();
     }
+    
+    public Produto getProdutoByCodigo(int codigo){
+        for(Produto p: LojaDepartamento.getProdutos()){
+            if(p.getCodigoProduto() == codigo) return p;
+        }
+        return null;
+    }
 }

@@ -33,7 +33,7 @@ public class IUCadastrarProduto extends javax.swing.JDialog {
         jComboBoxTipoProduto.addItem("Eletrônico");
         jComboBoxTipoProduto.addItem("Vestuario");
         
-        jTextFieldCodigo.setText(Integer.toString(LojaDepartamento.getTamanhoProdutos()));
+        jTextFieldCodigo.setText(Integer.toString(controller.getTamanhoProdutos()));
         
     }
 

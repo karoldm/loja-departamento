@@ -28,10 +28,12 @@ public class LojaDepartamento {
     }
 
     public static ArrayList<Venda> getVendas() {
+        vendas = Serializacao.read(configuracao.getArquivoVendas());
         return vendas;
     }
 
     public static ArrayList<Produto> getProdutos() {
+        produtos = Serializacao.read(configuracao.getArquivoProdutos());
         return produtos;
     }
 
@@ -41,6 +43,7 @@ public class LojaDepartamento {
     }
 
     public static ArrayList<Usuario> getUsuarios() {
+        usuarios = Serializacao.read(configuracao.getArquivoUsuarios());
         return usuarios;
     }
 
@@ -76,5 +79,15 @@ public class LojaDepartamento {
     
     public static int getTamanhoProdutos(){
         return Serializacao.read(configuracao.getArquivoProdutos()).size();
+    }
+    
+    public static void addVenda(Venda venda){
+        vendas = Serializacao.read(configuracao.getArquivoVendas());
+        vendas.add(venda);
+        Serializacao.write(vendas, configuracao.getArquivoVendas());
+    }
+    
+    public static int getTamanhoVendas(){
+        return Serializacao.read(configuracao.getArquivoVendas()).size();
     }
 }

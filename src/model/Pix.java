@@ -8,12 +8,14 @@ package model;
 public class Pix extends Pagamento {
     private String codigoPix;
 
-    public Pix(String codigoPix) {
+    public Pix() {
         super("PIX");
-        this.codigoPix = codigoPix;
+        gerarCodigoPix();
     }
     
-    //public void gerarCodigoPix(){}
+    private void gerarCodigoPix(){
+        codigoPix = Utilidades.randomKey(12);
+    }
 
     public String getCodigoPix() {
         return codigoPix;

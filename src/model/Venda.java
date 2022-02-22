@@ -1,6 +1,7 @@
 
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
@@ -9,7 +10,7 @@ import java.util.Iterator;
  *
  * @author karol
  */
-public class Venda {
+public class Venda implements Serializable{
     private int codigoVenda;
     private Cliente cliente;
     private Vendedor vendedor;
@@ -24,14 +25,13 @@ public class Venda {
             Cliente cliente, 
             Vendedor vendedor, 
             Calendar dataVenda,
-            ArrayList<ItemVenda> itensVenda, 
-            Pagamento formaPagamento) {
+            ArrayList<ItemVenda> itensVenda) {
         this.codigoVenda = codigoVenda;
         this.cliente = cliente;
         this.vendedor = vendedor;
         this.dataVenda = dataVenda;
         this.itensVenda = itensVenda;
-        this.formaPagamento = formaPagamento;
+        this.valorDesconto = 0;
     }
 
     public int getCodigoVenda() {
@@ -106,8 +106,16 @@ public class Venda {
             total += iterator.next().calcularTotal();
         }
         
-        if(cliente.isClienteOuro()) return(total - (total*2/100));
-        else return total;
+        valorTotal = total;
+        
+        if(cliente.isClienteOuro()) {
+            valorDesconto = valorTotal*(float)2/100;
+            valorTotal -= valorDesconto;
+        }
+        
+        System.out.println(valorDesconto);
+        
+        return valorTotal;
     }
     
     public void addItemVenda(ItemVenda item){
@@ -120,7 +128,7 @@ public class Venda {
             "\nCódigo: " + codigoVenda +
             "\nCliente: " + cliente +
             "\nVendedor: " + vendedor +
-            "\nData da Venda: " + dataVenda +
+            "\nData da Venda: " + dataVenda.getTime() +
             "\nItens Vendidos: " + itensVenda +
             "\nValor Total: " + valorTotal +
             "\nValor de Desconto: " + valorDesconto +

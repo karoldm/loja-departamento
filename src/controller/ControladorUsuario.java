@@ -6,6 +6,7 @@ import model.LojaDepartamento;
 
 
 import model.Cliente;
+import model.LojaDepartamento;
 import model.Usuario;
 import model.Vendedor;
 
@@ -90,5 +91,12 @@ public class ControladorUsuario {
     
     public int getTamanhoUsuarios(){
         return LojaDepartamento.getTamanhoUsuarios();
+    }
+    
+    public Usuario getUsuarioByCodigo(int codigo){
+        for(Usuario u: LojaDepartamento.getUsuarios()){
+            if(u.getCodigoUsuario() == codigo) return u;
+        }
+        return null;
     }
 }

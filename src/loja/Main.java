@@ -2,10 +2,8 @@
 package loja;
 
 //import java.util.ArrayList;
+import controller.ControladorVendas;
 import model.LojaDepartamento;
-//import model.Usuario;
-//import serializacao.Serializacao;
-
 import view.IUHome;
 
 /**
@@ -20,5 +18,7 @@ public class Main {
         home.setTitle(LojaDepartamento.getNomeLoja());
         home.setVisible(true);
         
+//        ControladorVendas controller = new ControladorVendas();
+//        System.out.println(controller.getVendas());
     }
 }

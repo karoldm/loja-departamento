@@ -33,6 +33,8 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemCadastrarFornecedor = new javax.swing.JMenuItem();
         jMenuItemCadastrarProduto = new javax.swing.JMenuItem();
         jMenuConsultar = new javax.swing.JMenu();
+        jMenuVenda = new javax.swing.JMenu();
+        jMenuItemRealizarVenda = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -76,6 +78,18 @@ public class IUHome extends javax.swing.JFrame {
 
         jMenuConsultar.setText("consultar");
         jMenuBar1.add(jMenuConsultar);
+
+        jMenuVenda.setText("Venda");
+
+        jMenuItemRealizarVenda.setText("Realizar Venda");
+        jMenuItemRealizarVenda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemRealizarVendaActionPerformed(evt);
+            }
+        });
+        jMenuVenda.add(jMenuItemRealizarVenda);
+
+        jMenuBar1.add(jMenuVenda);
 
         setJMenuBar(jMenuBar1);
 
@@ -125,6 +139,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemCadastrarProdutoActionPerformed
 
+    private void jMenuItemRealizarVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRealizarVendaActionPerformed
+       
+        IUAdicionarItemVenda cad = new IUAdicionarItemVenda(this, true);
+        cad.setLocationRelativeTo(this);
+        cad.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemRealizarVendaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -169,5 +191,7 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
     private javax.swing.JMenuItem jMenuItemCadastrarProduto;
     private javax.swing.JMenuItem jMenuItemCadastrarVendedor;
+    private javax.swing.JMenuItem jMenuItemRealizarVenda;
+    private javax.swing.JMenu jMenuVenda;
     // End of variables declaration//GEN-END:variables
 }
