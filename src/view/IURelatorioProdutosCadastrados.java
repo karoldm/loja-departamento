@@ -19,30 +19,30 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tableProdutosCadastrados.getColumnModel().getColumn(0).setPreferredWidth(50);
-        tableProdutosCadastrados.getColumnModel().getColumn(1).setPreferredWidth(100);
-        tableProdutosCadastrados.getColumnModel().getColumn(2).setPreferredWidth(300);
-        tableProdutosCadastrados.getColumnModel().getColumn(3).setPreferredWidth(100);
-        tableProdutosCadastrados.getColumnModel().getColumn(4).setPreferredWidth(50);
-        tableProdutosCadastrados.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tableProdutosCadastrados.getColumnModel().getColumn(6).setPreferredWidth(70);
+        jTable1.getColumnModel().getColumn(0).setPreferredWidth(50);
+        jTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        jTable1.getColumnModel().getColumn(2).setPreferredWidth(300);
+        jTable1.getColumnModel().getColumn(3).setPreferredWidth(200);
+        jTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
+        jTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
+        jTable1.getColumnModel().getColumn(6).setPreferredWidth(70);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
         c.setHorizontalAlignment(SwingConstants.CENTER);
         
-        tableProdutosCadastrados.getColumnModel().getColumn(0).setCellRenderer(c);
-        tableProdutosCadastrados.getColumnModel().getColumn(1).setCellRenderer(c);
-        tableProdutosCadastrados.getColumnModel().getColumn(2).setCellRenderer(c);
-        tableProdutosCadastrados.getColumnModel().getColumn(3).setCellRenderer(c);
-        tableProdutosCadastrados.getColumnModel().getColumn(4).setCellRenderer(c);
-        tableProdutosCadastrados.getColumnModel().getColumn(5).setCellRenderer(c);
-        tableProdutosCadastrados.getColumnModel().getColumn(6).setCellRenderer(c);
+        jTable1.getColumnModel().getColumn(0).setCellRenderer(c);
+        jTable1.getColumnModel().getColumn(1).setCellRenderer(c);
+        jTable1.getColumnModel().getColumn(2).setCellRenderer(c);
+        jTable1.getColumnModel().getColumn(3).setCellRenderer(c);
+        jTable1.getColumnModel().getColumn(4).setCellRenderer(c);
+        jTable1.getColumnModel().getColumn(5).setCellRenderer(c);
+        jTable1.getColumnModel().getColumn(6).setCellRenderer(c);
         
         ControladorProduto controller = new ControladorProduto();
         Object [][] row = controller.relatorioProdutosCadastrados();
         
-        DefaultTableModel modelo = (DefaultTableModel) tableProdutosCadastrados.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
         
         for(int i = 0; i < controller.getTamanhoProdutos(); i++){
             modelo.addRow(row[i]);
@@ -59,11 +59,11 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableProdutosCadastrados = new javax.swing.JTable();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        tableProdutosCadastrados.setModel(new javax.swing.table.DefaultTableModel(
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -79,7 +79,7 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tableProdutosCadastrados);
+        jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,6 +145,6 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tableProdutosCadastrados;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

@@ -110,7 +110,7 @@ public class ControladorProduto {
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
-            produtosDados[i][3] = p.getDataFabricacao();
+            produtosDados[i][3] = p.getDataFabricacao().getTime();
             produtosDados[i][4] = p.getValor();
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
