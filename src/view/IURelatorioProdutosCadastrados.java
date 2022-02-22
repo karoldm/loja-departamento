@@ -25,7 +25,7 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
         tableProdutosCadastrados.getColumnModel().getColumn(3).setPreferredWidth(100);
         tableProdutosCadastrados.getColumnModel().getColumn(4).setPreferredWidth(50);
         tableProdutosCadastrados.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tableProdutosCadastrados.getColumnModel().getColumn(6).setPreferredWidth(50);
+        tableProdutosCadastrados.getColumnModel().getColumn(6).setPreferredWidth(70);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
@@ -44,7 +44,7 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
         
         DefaultTableModel modelo = (DefaultTableModel) tableProdutosCadastrados.getModel();
         
-        for(int i = 0; i < row[0].length; i++){
+        for(int i = 0; i < controller.getTamanhoProdutos(); i++){
             modelo.addRow(row[i]);
         }
     }

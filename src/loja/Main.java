@@ -13,12 +13,12 @@ import view.IUHome;
 public class Main {
     
     public static void main(String[] args){
-//        IUHome home = new IUHome();
-//        home.setLocationRelativeTo(null);
-//        home.setTitle(LojaDepartamento.getNomeLoja());
-//        home.setVisible(true);
+        IUHome home = new IUHome();
+        home.setLocationRelativeTo(null);
+        home.setTitle(LojaDepartamento.getNomeLoja());
+        home.setVisible(true);
         
-        ControladorVendas controller = new ControladorVendas();
-        System.out.println(controller.getVendas());
+//        ControladorVendas controller = new ControladorVendas();
+//        System.out.println(controller.getVendas());
     }
 }

@@ -100,20 +100,20 @@ public class ControladorProduto {
     public Object[][] relatorioProdutosCadastrados(){
         ArrayList<Produto> produtos = LojaDepartamento.getProdutos();
         
-        Object[][] produtosDados = new Object[7][produtos.size()];
+        Object[][] produtosDados = new Object[produtos.size()][7];
         
         Iterator<Produto> iterator = produtos.iterator();
         
         int i = 0;
         while(iterator.hasNext()){
             Produto p = iterator.next();
-            produtosDados[0][i] = p.getCodigoProduto();
-            produtosDados[1][i] = p.getNome();
-            produtosDados[2][i] = p.getDescricao();
-            produtosDados[3][i] = p.getDataFabricacao();
-            produtosDados[4][i] = p.getValor();
-            produtosDados[5][i] = p.getFornecedor().getNome();
-            produtosDados[6][i] = p.isDisponivel();
+            produtosDados[i][0] = p.getCodigoProduto();
+            produtosDados[i][1] = p.getNome();
+            produtosDados[i][2] = p.getDescricao();
+            produtosDados[i][3] = p.getDataFabricacao();
+            produtosDados[i][4] = p.getValor();
+            produtosDados[i][5] = p.getFornecedor().getNome();
+            produtosDados[i][6] = p.isDisponivel();
             i++;
         }
         
