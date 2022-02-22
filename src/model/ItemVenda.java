@@ -35,4 +35,9 @@ public class ItemVenda implements Serializable{
     public float calcularTotal(){
         return(produto.getValor() * quantidade);
     }
+    
+    @Override
+    public String toString(){
+        return quantidade + "x - " + produto;
+    }
 }

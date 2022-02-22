@@ -122,6 +122,17 @@ public class Venda implements Serializable{
         itensVenda.add(item);
     }
     
+    private String toStringItensVenda(){
+        Iterator<ItemVenda> iterator = itensVenda.iterator();
+        String itensString = "";
+        
+        while(iterator.hasNext()){
+            itensString += iterator.next();
+        }
+        
+        return itensString;
+    }
+    
     @Override
     public String toString(){
         return(
@@ -129,7 +140,7 @@ public class Venda implements Serializable{
             "\nCliente: " + cliente +
             "\nVendedor: " + vendedor +
             "\nData da Venda: " + dataVenda.getTime() +
-            "\nItens Vendidos: " + itensVenda +
+            "\nItens Vendidos: " + toStringItensVenda() +
             "\nValor Total: " + valorTotal +
             "\nValor de Desconto: " + valorDesconto +
             "\nForma de Pagamento: " + formaPagamento
