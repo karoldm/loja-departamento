@@ -127,7 +127,7 @@ public class Venda implements Serializable{
         String itensString = "";
         
         while(iterator.hasNext()){
-            itensString += iterator.next() + "\n";
+            itensString += iterator.next();
         }
         
         return itensString;
@@ -140,7 +140,7 @@ public class Venda implements Serializable{
             "\nCliente: " + cliente +
             "\nVendedor: " + vendedor +
             "\nData da Venda: " + dataVenda.getTime() +
-            "\nItens Vendidos: \n" + toStringItensVenda() +
+            "\nItens Vendidos: " + toStringItensVenda() +
             "\nValor Total: " + valorTotal +
             "\nValor de Desconto: " + valorDesconto +
             "\nForma de Pagamento: " + formaPagamento
