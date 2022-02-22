@@ -5,7 +5,6 @@ import controller.ControladorProduto;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import model.Fornecedor;
-import model.LojaDepartamento;
 import model.Utilidades;
 
 /**

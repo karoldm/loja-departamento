@@ -32,9 +32,10 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemCadastrarVendedor = new javax.swing.JMenuItem();
         jMenuItemCadastrarFornecedor = new javax.swing.JMenuItem();
         jMenuItemCadastrarProduto = new javax.swing.JMenuItem();
-        jMenuConsultar = new javax.swing.JMenu();
         jMenuVenda = new javax.swing.JMenu();
         jMenuItemRealizarVenda = new javax.swing.JMenuItem();
+        jMenuConsultar = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -76,12 +77,9 @@ public class IUHome extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuCadastrar);
 
-        jMenuConsultar.setText("consultar");
-        jMenuBar1.add(jMenuConsultar);
+        jMenuVenda.setText("venda");
 
-        jMenuVenda.setText("Venda");
-
-        jMenuItemRealizarVenda.setText("Realizar Venda");
+        jMenuItemRealizarVenda.setText("realizar venda");
         jMenuItemRealizarVenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemRealizarVendaActionPerformed(evt);
@@ -90,6 +88,18 @@ public class IUHome extends javax.swing.JFrame {
         jMenuVenda.add(jMenuItemRealizarVenda);
 
         jMenuBar1.add(jMenuVenda);
+
+        jMenuConsultar.setText("consultar");
+
+        jMenuItem1.setText("produtos cadastrados");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItem1);
+
+        jMenuBar1.add(jMenuConsultar);
 
         setJMenuBar(jMenuBar1);
 
@@ -147,6 +157,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemRealizarVendaActionPerformed
 
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        
+        IURelatorioProdutosCadastrados cad = new IURelatorioProdutosCadastrados(this, true);
+        cad.setLocationRelativeTo(this);
+        cad.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -187,6 +205,7 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuCadastrar;
     private javax.swing.JMenu jMenuConsultar;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItemCadastrarCliente;
     private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
     private javax.swing.JMenuItem jMenuItemCadastrarProduto;
