@@ -100,7 +100,7 @@ public abstract class Produto implements Serializable{
             "\nCódigo: " + codigoProduto +
             "\nNome: " + nome +
             "\nDescrição: " + descricao +
-            "\nData de Fabricação: " + dataFabricacao +
+            "\nData de Fabricação: " + dataFabricacao.getTime() +
             "\nValor: " + valor +
             "\nFornecedor: " + fornecedor +
             "\nDisponível: " + (disponivel ? "Sim" : "Não")
