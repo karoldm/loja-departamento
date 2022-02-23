@@ -10,41 +10,41 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author karol
  */
-public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
+public class IURelatorioProdutosAlimenticios extends javax.swing.JDialog {
 
     /**
-     * Creates new form IURelatorioProdutosCadastrados
+     * Creates new form IURelatorioProdutosAlimenticios
      */
-    public IURelatorioProdutosCadastrados(java.awt.Frame parent, boolean modal) {
+    public IURelatorioProdutosAlimenticios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        tabelaProdutosCadastrados.getColumnModel().getColumn(0).setPreferredWidth(50);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(1).setPreferredWidth(100);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(2).setPreferredWidth(300);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(3).setPreferredWidth(200);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(4).setPreferredWidth(100);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(6).setPreferredWidth(70);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(0).setPreferredWidth(50);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(1).setPreferredWidth(100);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(2).setPreferredWidth(300);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(3).setPreferredWidth(200);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(4).setPreferredWidth(100);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(5).setPreferredWidth(100);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(6).setPreferredWidth(70);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
         c.setHorizontalAlignment(SwingConstants.CENTER);
         
-        tabelaProdutosCadastrados.getColumnModel().getColumn(0).setCellRenderer(c);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(1).setCellRenderer(c);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(2).setCellRenderer(c);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(3).setCellRenderer(c);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(4).setCellRenderer(c);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(5).setCellRenderer(c);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(6).setCellRenderer(c);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(0).setCellRenderer(c);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(1).setCellRenderer(c);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(2).setCellRenderer(c);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(3).setCellRenderer(c);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(4).setCellRenderer(c);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(5).setCellRenderer(c);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(6).setCellRenderer(c);
         
         ControladorProduto controller = new ControladorProduto();
-        Object [][] row = controller.relatorioProdutosCadastrados();
+        Object [][] row = controller.relatorioProdutosAlimenticios();
         
-        DefaultTableModel modelo = (DefaultTableModel) tabelaProdutosCadastrados.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) tabelaProdutosAlimenticios.getModel();
         
-        for(int i = 0; i < controller.getTamanhoProdutos(); i++){
+        for(int i = 0; i < row.length; i++){
             modelo.addRow(row[i]);
         }
     }
@@ -59,11 +59,13 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        tabelaProdutosCadastrados = new javax.swing.JTable();
+        tabelaProdutosAlimenticios = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(908, 366));
+        setResizable(false);
 
-        tabelaProdutosCadastrados.setModel(new javax.swing.table.DefaultTableModel(
+        tabelaProdutosAlimenticios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -79,7 +81,7 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tabelaProdutosCadastrados);
+        jScrollPane1.setViewportView(tabelaProdutosAlimenticios);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,14 +89,14 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 858, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 839, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
         );
 
@@ -118,20 +120,20 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioProdutosCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioProdutosAlimenticios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioProdutosCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioProdutosAlimenticios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioProdutosCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioProdutosAlimenticios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioProdutosCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioProdutosAlimenticios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                IURelatorioProdutosCadastrados dialog = new IURelatorioProdutosCadastrados(new javax.swing.JFrame(), true);
+                IURelatorioProdutosAlimenticios dialog = new IURelatorioProdutosAlimenticios(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -145,6 +147,6 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tabelaProdutosCadastrados;
+    private javax.swing.JTable tabelaProdutosAlimenticios;
     // End of variables declaration//GEN-END:variables
 }

@@ -2,12 +2,8 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import loja.Configuracao;
-import model.Fornecedor;
-import model.Produto;
-import model.Usuario;
-
-import model.Venda;
 import serializacao.Serializacao;
 
 /**
@@ -89,5 +85,23 @@ public class LojaDepartamento {
     
     public static int getTamanhoVendas(){
         return Serializacao.read(configuracao.getArquivoVendas()).size();
+    }
+    
+    public static ArrayList<Alimentacao> getProdutosAlimenticios(){
+        ArrayList<Alimentacao> produtosAlimenticios = new ArrayList<>();
+        
+        produtos = getProdutos();
+        
+        Iterator<Produto> iterator = produtos.iterator();
+        
+        while(iterator.hasNext()){
+            Produto p = iterator.next();
+            
+            if(p instanceof Alimentacao){
+                produtosAlimenticios.add((Alimentacao)p);
+            }
+        }
+        
+        return produtosAlimenticios;
     }
 }
