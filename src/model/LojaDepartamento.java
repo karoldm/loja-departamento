@@ -122,4 +122,22 @@ public class LojaDepartamento {
         
         return produtosEletrodomesticos;
     }
+     
+     public static ArrayList<Eletronico> getProdutosEletronicos(){
+        ArrayList<Eletronico> produtosEletronicos = new ArrayList<>();
+        
+        produtos = getProdutos();
+        
+        Iterator<Produto> iterator = produtos.iterator();
+        
+        while(iterator.hasNext()){
+            Produto p = iterator.next();
+            
+            if(p instanceof Eletronico){
+                produtosEletronicos.add((Eletronico)p);
+            }
+        }
+        
+        return produtosEletronicos;
+    }
 }
