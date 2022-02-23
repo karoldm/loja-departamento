@@ -39,6 +39,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -125,6 +126,14 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItem4);
+
+        jMenuItem5.setText("produtos vestuário");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItem5);
 
         jMenuBar1.add(jMenuConsultar);
 
@@ -216,6 +225,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        
+        IURelatorioProdutosVestuario rel = new IURelatorioProdutosVestuario(this, true);
+        rel.setLocationRelativeTo(this);
+        rel.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -260,6 +277,7 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItemCadastrarCliente;
     private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
     private javax.swing.JMenuItem jMenuItemCadastrarProduto;
