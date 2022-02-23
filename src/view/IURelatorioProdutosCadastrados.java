@@ -19,13 +19,13 @@ public class IURelatorioProdutosCadastrados extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaProdutosCadastrados.getColumnModel().getColumn(0).setPreferredWidth(50);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(1).setPreferredWidth(100);
+        tabelaProdutosCadastrados.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaProdutosCadastrados.getColumnModel().getColumn(1).setPreferredWidth(200);
         tabelaProdutosCadastrados.getColumnModel().getColumn(2).setPreferredWidth(300);
         tabelaProdutosCadastrados.getColumnModel().getColumn(3).setPreferredWidth(200);
         tabelaProdutosCadastrados.getColumnModel().getColumn(4).setPreferredWidth(100);
         tabelaProdutosCadastrados.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tabelaProdutosCadastrados.getColumnModel().getColumn(6).setPreferredWidth(70);
+        tabelaProdutosCadastrados.getColumnModel().getColumn(6).setPreferredWidth(100);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  

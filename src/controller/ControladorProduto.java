@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 import model.Alimentacao;
+import model.Eletrodomestico;
 import model.Fornecedor;
 import model.LojaDepartamento;
 import model.Produto;
@@ -131,6 +132,30 @@ public class ControladorProduto {
         Object[][] produtosDados = new Object[produtos.size()][7];
 
         Iterator<Alimentacao> iterator = produtos.iterator();
+
+        int i = 0;
+        while (iterator.hasNext()) {
+            Produto p = iterator.next();
+            
+            produtosDados[i][0] = p.getCodigoProduto();
+            produtosDados[i][1] = p.getNome();
+            produtosDados[i][2] = p.getDescricao();
+            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][4] = p.getValor();
+            produtosDados[i][5] = p.getFornecedor().getNome();
+            produtosDados[i][6] = p.isDisponivel();
+            i++;
+        }
+
+        return produtosDados;
+    }
+    
+    public Object[][] relatorioProdutosEletrodomesticos() {
+        ArrayList<Eletrodomestico> produtos = LojaDepartamento.getProdutosEletrodomesticos();
+
+        Object[][] produtosDados = new Object[produtos.size()][7];
+
+        Iterator<Eletrodomestico> iterator = produtos.iterator();
 
         int i = 0;
         while (iterator.hasNext()) {
