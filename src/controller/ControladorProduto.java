@@ -8,8 +8,10 @@ import model.Alimentacao;
 import model.Eletrodomestico;
 import model.Eletronico;
 import model.Fornecedor;
+import model.ItemVenda;
 import model.LojaDepartamento;
 import model.Produto;
+import model.Venda;
 import model.Vestuario;
 
 /**
@@ -138,7 +140,7 @@ public class ControladorProduto {
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
-            
+
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
@@ -151,7 +153,7 @@ public class ControladorProduto {
 
         return produtosDados;
     }
-    
+
     public Object[][] relatorioProdutosEletrodomesticos() {
         ArrayList<Eletrodomestico> produtos = LojaDepartamento.getProdutosEletrodomesticos();
 
@@ -162,7 +164,7 @@ public class ControladorProduto {
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
-            
+
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
@@ -175,18 +177,18 @@ public class ControladorProduto {
 
         return produtosDados;
     }
-    
+
     public Object[][] relatorioProdutosEletronicos() {
         ArrayList<Eletronico> produtos = LojaDepartamento.getProdutosEletronicos();
 
         Object[][] produtosDados = new Object[produtos.size()][7];
 
-        Iterator<Eletronico >iterator = produtos.iterator();
+        Iterator<Eletronico> iterator = produtos.iterator();
 
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
-            
+
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
@@ -199,18 +201,18 @@ public class ControladorProduto {
 
         return produtosDados;
     }
-    
+
     public Object[][] relatorioProdutosVestuario() {
         ArrayList<Vestuario> produtos = LojaDepartamento.getProdutosVestuario();
 
         Object[][] produtosDados = new Object[produtos.size()][7];
 
-        Iterator<Vestuario >iterator = produtos.iterator();
+        Iterator<Vestuario> iterator = produtos.iterator();
 
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
-            
+
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
@@ -222,5 +224,80 @@ public class ControladorProduto {
         }
 
         return produtosDados;
+    }
+
+    public Object[][] getDezProdutosMaisVendidos() {
+        int quantidadeProdutos = LojaDepartamento.getTamanhoProdutos();
+
+        ArrayList<Venda> vendas = LojaDepartamento.getVendas();
+
+        Object[][] dados = new Object[10][7];
+
+        /*
+        cada posição do array representa o código de um produto, então na posição
+        zero temos a quantidade de vezes que o produto com código zero foi vendido
+         */
+        int[] quantidadeVendasPorProduto = new int[quantidadeProdutos];
+
+        Iterator<Venda> iteratorVendas = vendas.iterator();
+
+        while (iteratorVendas.hasNext()) {
+            Venda v = iteratorVendas.next();
+
+            Iterator<ItemVenda> iteratorItensDaVenda = v.getItensVenda().iterator();
+
+            /*
+            para cada item vendido incrementamos quantidadeVendasPorProduto na
+            posição que representa o produto segundo a quantidade daquele item
+            que foi vendido
+             */
+            while (iteratorItensDaVenda.hasNext()) {
+                ItemVenda item = iteratorItensDaVenda.next();
+                Produto p = item.getProduto();
+                quantidadeVendasPorProduto[p.getCodigoProduto()] += item.getQuantidade();
+            }
+        }
+
+        /*
+        Ao final do loop temos o array quantidadeVendasPorProduto armazenado a 
+        quantidade de vendas realizadas para cada produto, portanto basta achar 
+        as posições (que representam o código do produto) dos dez maiores valores 
+        do array.
+         */
+        int maior, indiceMaior;
+
+        for (int i = 0; i < 10; i++) {
+            
+            maior = quantidadeVendasPorProduto[0];
+            indiceMaior = 0;
+            
+            /*
+            procurando o maior valor do array, ou seja, a posição que possui
+            o maior número de vendas
+            */
+            for (int j = 1; j < quantidadeProdutos; j++) {
+                if (quantidadeVendasPorProduto[j] > maior) {
+                    maior = quantidadeVendasPorProduto[j];
+                    indiceMaior = j;
+                }
+            }
+
+            //"removendo" produto encontrado da lista
+            quantidadeVendasPorProduto[indiceMaior] = 0;
+            
+            Produto p = getProdutoByCodigo(indiceMaior);
+
+            dados[i][0] = p.getCodigoProduto();
+            dados[i][1] = p.getNome();
+            dados[i][2] = p.getDescricao();
+            dados[i][3] = p.getDataFabricacao().getTime();
+            dados[i][4] = p.getValor();
+            dados[i][5] = p.getFornecedor().getNome();
+            dados[i][6] = p.isDisponivel();
+            
+        }
+
+        return dados;
+
     }
 }
