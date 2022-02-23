@@ -7,6 +7,7 @@ import model.Eletrodomestico;
 import model.Eletronico;
 import model.Fornecedor;
 import model.Produto;
+import model.Vestuario;
 
 /**
  *
@@ -51,7 +52,7 @@ public class FactoryProduto {
                     valor,
                     fornecedor,
                     disponivel);
-            case "vestuario": return new Alimentacao(
+            case "vestuario": return new Vestuario(
                     codigoProduto,
                     nome,
                     descricao,
