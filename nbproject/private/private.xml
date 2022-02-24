@@ -3,13 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUAdicionarItemVenda.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IURelatorioProdutosEletronicos.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUHome.java</file>
-            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/model/LojaDepartamento.java</file>
-            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/controller/ControladorUsuario.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IURelatorioProdutosMaisVendidos.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUCadastrarProduto.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/loja/Main.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/controller/ControladorProduto.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/strategy/OrdenacaoStrategy.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IURelatorioProdutosAlimenticios.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/factory/FactoryProduto.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/strategy/StrategyOrdenacaoCrescente.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IUFinalizarVenda.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IURelatorioProdutosVestuario.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IURelatorioProdutosEletrodomesticos.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/model/LojaDepartamento.java</file>
+            <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/controller/ControladorUsuario.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/view/IURelatorioProdutosCadastrados.java</file>
             <file>file:/C:/Users/karol/OneDrive/Área%20de%20Trabalho/POOII/TP02/src/model/Produto.java</file>
         </group>

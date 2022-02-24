@@ -1,9 +1,11 @@
 package controller;
 
 import factory.FactoryProduto;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
+
 import model.Alimentacao;
 import model.Eletrodomestico;
 import model.Eletronico;
@@ -299,5 +301,29 @@ public class ControladorProduto {
 
         return dados;
 
+    }
+    
+    public Object[][] relatorioFornecedoresCadastrados(){
+        ArrayList<Fornecedor> fornecedores = LojaDepartamento.getFornecedores();
+
+        Object[][] fornecedoresDados = new Object[fornecedores.size()][7];
+
+        Iterator<Fornecedor> iterator = fornecedores.iterator();
+
+        int i = 0;
+        while (iterator.hasNext()) {
+            Fornecedor f = iterator.next();
+
+            fornecedoresDados[i][0] = f.getCodigoFornecedor();
+            fornecedoresDados[i][1] = f.getCnpj();
+            fornecedoresDados[i][2] = f.getNome();
+            fornecedoresDados[i][3] = f.getDescricao();
+            fornecedoresDados[i][4] = f.getEmail();
+            fornecedoresDados[i][5] = f.getTelefone();
+            fornecedoresDados[i][6] = f.getEndereco();
+            i++;
+        }
+
+        return fornecedoresDados;
     }
 }
