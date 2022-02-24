@@ -107,6 +107,7 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
         jButtonFinalizar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Finalizar Venda");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Finalizar Venda"));
 

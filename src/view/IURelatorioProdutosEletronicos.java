@@ -62,6 +62,7 @@ public class IURelatorioProdutosEletronicos extends javax.swing.JDialog {
         tabelaProdutosEletronicos = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Produtos Eletrônicos");
 
         tabelaProdutosEletronicos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

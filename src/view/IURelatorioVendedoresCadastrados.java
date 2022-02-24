@@ -71,6 +71,7 @@ public class IURelatorioVendedoresCadastrados extends javax.swing.JDialog {
         tabelaVendedoresCadastrados = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Vendedores Cadastrados");
         setPreferredSize(new java.awt.Dimension(1200, 318));
 
         tabelaVendedoresCadastrados.setModel(new javax.swing.table.DefaultTableModel(

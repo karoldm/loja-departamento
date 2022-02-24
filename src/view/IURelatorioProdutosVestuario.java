@@ -62,6 +62,7 @@ public class IURelatorioProdutosVestuario extends javax.swing.JDialog {
         tabelaProdutosVestuario = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Produtos de Vestuário");
 
         tabelaProdutosVestuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

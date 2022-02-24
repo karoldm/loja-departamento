@@ -62,6 +62,7 @@ public class IURelatorioFornecedoresCadastrados extends javax.swing.JDialog {
         tabelaFornecedoresCadastrados = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Fornecedores Cadastrados");
 
         tabelaFornecedoresCadastrados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

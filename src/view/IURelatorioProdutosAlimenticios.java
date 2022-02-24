@@ -62,6 +62,7 @@ public class IURelatorioProdutosAlimenticios extends javax.swing.JDialog {
         tabelaProdutosAlimenticios = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Produtos Alimentícios");
         setPreferredSize(new java.awt.Dimension(908, 366));
         setResizable(false);
 
