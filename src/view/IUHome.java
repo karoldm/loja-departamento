@@ -35,15 +35,15 @@ public class IUHome extends javax.swing.JFrame {
         jMenuVenda = new javax.swing.JMenu();
         jMenuItemRealizarVenda = new javax.swing.JMenuItem();
         jMenuConsultar = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItemRelProdutosCadastrados = new javax.swing.JMenuItem();
+        jMenuItemRelProdutosAlimenticios = new javax.swing.JMenuItem();
+        jMenuItemRelProdutosEletrodomesticos = new javax.swing.JMenuItem();
+        jMenuItemRelProdutosEletronicos = new javax.swing.JMenuItem();
+        jMenuItemRelProdutosVestuario = new javax.swing.JMenuItem();
+        jMenuItemRelProdutosMaisVendidos = new javax.swing.JMenuItem();
+        jMenuItemRelFornecedoresCadastrados = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItemRelVendedoresCadastrados = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -99,70 +99,70 @@ public class IUHome extends javax.swing.JFrame {
 
         jMenuConsultar.setText("consultar");
 
-        jMenuItem1.setText("produtos cadastrados");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelProdutosCadastrados.setText("produtos cadastrados");
+        jMenuItemRelProdutosCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItemRelProdutosCadastradosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem1);
+        jMenuConsultar.add(jMenuItemRelProdutosCadastrados);
 
-        jMenuItem2.setText("produtos alimentícios");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelProdutosAlimenticios.setText("produtos alimentícios");
+        jMenuItemRelProdutosAlimenticios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jMenuItemRelProdutosAlimenticiosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem2);
+        jMenuConsultar.add(jMenuItemRelProdutosAlimenticios);
 
-        jMenuItem3.setText("produtos eletrodomesticos");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelProdutosEletrodomesticos.setText("produtos eletrodomesticos");
+        jMenuItemRelProdutosEletrodomesticos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                jMenuItemRelProdutosEletrodomesticosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem3);
+        jMenuConsultar.add(jMenuItemRelProdutosEletrodomesticos);
 
-        jMenuItem4.setText("produtos eletrônicos");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelProdutosEletronicos.setText("produtos eletrônicos");
+        jMenuItemRelProdutosEletronicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                jMenuItemRelProdutosEletronicosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem4);
+        jMenuConsultar.add(jMenuItemRelProdutosEletronicos);
 
-        jMenuItem5.setText("produtos vestuário");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelProdutosVestuario.setText("produtos vestuário");
+        jMenuItemRelProdutosVestuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
+                jMenuItemRelProdutosVestuarioActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem5);
+        jMenuConsultar.add(jMenuItemRelProdutosVestuario);
 
-        jMenuItem6.setText("dez produtos mais vendidos");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelProdutosMaisVendidos.setText("dez produtos mais vendidos");
+        jMenuItemRelProdutosMaisVendidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
+                jMenuItemRelProdutosMaisVendidosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem6);
+        jMenuConsultar.add(jMenuItemRelProdutosMaisVendidos);
 
-        jMenuItem7.setText("fornecedores cadastrados");
-        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelFornecedoresCadastrados.setText("fornecedores cadastrados");
+        jMenuItemRelFornecedoresCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem7ActionPerformed(evt);
+                jMenuItemRelFornecedoresCadastradosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem7);
+        jMenuConsultar.add(jMenuItemRelFornecedoresCadastrados);
         jMenuConsultar.add(jSeparator1);
 
-        jMenuItem8.setText("vendedores cadastrados");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelVendedoresCadastrados.setText("vendedores cadastrados");
+        jMenuItemRelVendedoresCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                jMenuItemRelVendedoresCadastradosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem8);
+        jMenuConsultar.add(jMenuItemRelVendedoresCadastrados);
 
         jMenuBar1.add(jMenuConsultar);
 
@@ -222,69 +222,69 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemRealizarVendaActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItemRelProdutosCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosCadastradosActionPerformed
         
-        IURelatorioProdutosCadastrados rel = new IURelatorioProdutosCadastrados(this, true);
+        IURelatorioProdutosCadastrados rel = new IURelatorioProdutosCadastrados(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelProdutosCadastradosActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jMenuItemRelProdutosAlimenticiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosAlimenticiosActionPerformed
         
-        IURelatorioProdutosAlimenticios rel = new IURelatorioProdutosAlimenticios(this, true);
+        IURelatorioProdutosAlimenticios rel = new IURelatorioProdutosAlimenticios(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelProdutosAlimenticiosActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void jMenuItemRelProdutosEletrodomesticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosEletrodomesticosActionPerformed
         
-        IURelatorioProdutosEletrodomesticos rel = new IURelatorioProdutosEletrodomesticos(this, true);
+        IURelatorioProdutosEletrodomesticos rel = new IURelatorioProdutosEletrodomesticos(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelProdutosEletrodomesticosActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void jMenuItemRelProdutosEletronicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosEletronicosActionPerformed
         
-        IURelatorioProdutosEletronicos rel = new IURelatorioProdutosEletronicos(this, true);
+        IURelatorioProdutosEletronicos rel = new IURelatorioProdutosEletronicos(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelProdutosEletronicosActionPerformed
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+    private void jMenuItemRelProdutosVestuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosVestuarioActionPerformed
         
-        IURelatorioProdutosVestuario rel = new IURelatorioProdutosVestuario(this, true);
+        IURelatorioProdutosVestuario rel = new IURelatorioProdutosVestuario(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelProdutosVestuarioActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+    private void jMenuItemRelProdutosMaisVendidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosMaisVendidosActionPerformed
         
-        IURelatorioProdutosMaisVendidos rel = new IURelatorioProdutosMaisVendidos(this, true);
+        IURelatorioProdutosMaisVendidos rel = new IURelatorioProdutosMaisVendidos(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelProdutosMaisVendidosActionPerformed
 
-    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+    private void jMenuItemRelFornecedoresCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelFornecedoresCadastradosActionPerformed
         
-        IURelatorioFornecedoresCadastrados rel = new IURelatorioFornecedoresCadastrados(this, true);
+        IURelatorioFornecedoresCadastrados rel = new IURelatorioFornecedoresCadastrados(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem7ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelFornecedoresCadastradosActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+    private void jMenuItemRelVendedoresCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelVendedoresCadastradosActionPerformed
        
-        IURelatorioVendedoresCadastrados rel = new IURelatorioVendedoresCadastrados(this, true);
+        IURelatorioVendedoresCadastrados rel = new IURelatorioVendedoresCadastrados(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelVendedoresCadastradosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -326,19 +326,19 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuCadastrar;
     private javax.swing.JMenu jMenuConsultar;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItemCadastrarCliente;
     private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
     private javax.swing.JMenuItem jMenuItemCadastrarProduto;
     private javax.swing.JMenuItem jMenuItemCadastrarVendedor;
     private javax.swing.JMenuItem jMenuItemRealizarVenda;
+    private javax.swing.JMenuItem jMenuItemRelFornecedoresCadastrados;
+    private javax.swing.JMenuItem jMenuItemRelProdutosAlimenticios;
+    private javax.swing.JMenuItem jMenuItemRelProdutosCadastrados;
+    private javax.swing.JMenuItem jMenuItemRelProdutosEletrodomesticos;
+    private javax.swing.JMenuItem jMenuItemRelProdutosEletronicos;
+    private javax.swing.JMenuItem jMenuItemRelProdutosMaisVendidos;
+    private javax.swing.JMenuItem jMenuItemRelProdutosVestuario;
+    private javax.swing.JMenuItem jMenuItemRelVendedoresCadastrados;
     private javax.swing.JMenu jMenuVenda;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
