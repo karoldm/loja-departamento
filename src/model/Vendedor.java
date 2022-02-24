@@ -29,6 +29,30 @@ public class Vendedor extends Usuario {
         this.pis = pis;
         this.dataAdmissao = dataAdmissao;
     }
+
+    public float getSalario() {
+        return salario;
+    }
+
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+
+    public String getPis() {
+        return pis;
+    }
+
+    public void setPis(String pis) {
+        this.pis = pis;
+    }
+
+    public Calendar getDataAdmissao() {
+        return dataAdmissao;
+    }
+
+    public void setDataAdmissao(Calendar dataAdmissao) {
+        this.dataAdmissao = dataAdmissao;
+    }
     
     
     

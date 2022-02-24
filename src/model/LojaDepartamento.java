@@ -158,4 +158,22 @@ public class LojaDepartamento {
         
         return produtosVestuario;
     }
+     
+     public static ArrayList<Vendedor> getVendedores(){
+        ArrayList<Vendedor> vendedores = new ArrayList<>();
+        
+        usuarios = getUsuarios();
+        
+        Iterator<Usuario> iterator = usuarios.iterator();
+        
+        while(iterator.hasNext()){
+            Usuario u = iterator.next();
+            
+            if(u instanceof Vendedor){
+                vendedores.add((Vendedor)u);
+            }
+        }
+        
+        return vendedores;
+    }
 }

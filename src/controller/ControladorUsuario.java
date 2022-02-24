@@ -1,11 +1,13 @@
 
 package controller;
 
+import java.util.ArrayList;
 import java.util.Calendar;
-import model.LojaDepartamento;
+import java.util.Iterator;
 
 
 import model.Cliente;
+import model.Fornecedor;
 import model.LojaDepartamento;
 import model.Usuario;
 import model.Vendedor;
@@ -98,5 +100,33 @@ public class ControladorUsuario {
             if(u.getCodigoUsuario() == codigo) return u;
         }
         return null;
+    }
+    
+    public Object[][] relatorioVendedoresCadastrados(){
+        ArrayList<Vendedor> vendedores = LojaDepartamento.getVendedores();
+
+        Object[][] vendedoresDados = new Object[vendedores.size()][11];
+
+        Iterator<Vendedor> iterator = vendedores.iterator();
+
+        int i = 0;
+        while (iterator.hasNext()) {
+            Vendedor v = iterator.next();
+
+            vendedoresDados[i][0] = v.getCodigoUsuario();
+            vendedoresDados[i][1] = v.getNome();
+            vendedoresDados[i][2] = v.getCpf();
+            vendedoresDados[i][3] = v.getRg();
+            vendedoresDados[i][4] = v.getDataNascimento().getTime();
+            vendedoresDados[i][5] = v.getEndereco();
+            vendedoresDados[i][6] = v.getCep();
+            vendedoresDados[i][7] = v.getEmail();
+            vendedoresDados[i][8] = v.getSalario();
+            vendedoresDados[i][9] = v.getPis();
+            vendedoresDados[i][10] = v.getDataAdmissao().getTime();
+            i++;
+        }
+
+        return vendedoresDados;
     }
 }
