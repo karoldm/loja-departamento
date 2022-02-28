@@ -27,7 +27,7 @@ public class IURelatorioProdutosVestuario extends javax.swing.JDialog {
         tabelaProdutosVestuario.getColumnModel().getColumn(5).setPreferredWidth(100);
         tabelaProdutosVestuario.getColumnModel().getColumn(6).setPreferredWidth(100);
          
-        DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
+        DefaultTableCellRenderer c = new DefaultTableCellRenderer();
  
         c.setHorizontalAlignment(SwingConstants.CENTER);
         
