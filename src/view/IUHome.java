@@ -48,6 +48,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemVendasRealizadas = new javax.swing.JMenuItem();
         jMenuItemVendasDinheiro = new javax.swing.JMenuItem();
         jMenuItemVendasPIX = new javax.swing.JMenuItem();
+        jMenuItemVendasCartao = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -216,6 +217,14 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItemVendasPIX);
+
+        jMenuItemVendasCartao.setText("vendas realizadas em cartão de crédito");
+        jMenuItemVendasCartao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemVendasCartaoActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItemVendasCartao);
 
         jMenuBar1.add(jMenuConsultar);
 
@@ -387,6 +396,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemVendasPIXActionPerformed
 
+    private void jMenuItemVendasCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasCartaoActionPerformed
+       
+        IURelatorioVendasCartao rel = new IURelatorioVendasCartao(this, false);
+        rel.setLocationRelativeTo(this);
+        rel.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemVendasCartaoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -442,6 +459,7 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemRelProdutosMaisVendidos;
     private javax.swing.JMenuItem jMenuItemRelProdutosVestuario;
     private javax.swing.JMenuItem jMenuItemRelVendedoresCadastrados;
+    private javax.swing.JMenuItem jMenuItemVendasCartao;
     private javax.swing.JMenuItem jMenuItemVendasCliente;
     private javax.swing.JMenuItem jMenuItemVendasDinheiro;
     private javax.swing.JMenuItem jMenuItemVendasPIX;
