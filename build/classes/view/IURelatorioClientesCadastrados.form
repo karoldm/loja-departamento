@@ -61,7 +61,7 @@
                 <Column editable="false" title="Endere&#xe7;o" type="java.lang.Object"/>
                 <Column editable="false" title="CEP" type="java.lang.Object"/>
                 <Column editable="false" title="Email" type="java.lang.Object"/>
-                <Column editable="false" title="Title 9" type="java.lang.Object"/>
+                <Column editable="false" title="Ouro" type="java.lang.Object"/>
               </Table>
             </Property>
           </Properties>

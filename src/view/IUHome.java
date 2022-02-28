@@ -41,7 +41,8 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemRelFornecedoresCadastrados = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItemRelVendedoresCadastrados = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItemClientesCadastrados = new javax.swing.JMenuItem();
+        jMenuItemClientesOuro = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -162,13 +163,21 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelVendedoresCadastrados);
 
-        jMenuItem1.setText("clientes cadastrados");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemClientesCadastrados.setText("clientes cadastrados");
+        jMenuItemClientesCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItemClientesCadastradosActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem1);
+        jMenuConsultar.add(jMenuItemClientesCadastrados);
+
+        jMenuItemClientesOuro.setText("clientes de ouro");
+        jMenuItemClientesOuro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemClientesOuroActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItemClientesOuro);
 
         jMenuBar1.add(jMenuConsultar);
 
@@ -292,13 +301,21 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemRelVendedoresCadastradosActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItemClientesCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClientesCadastradosActionPerformed
         
         IURelatorioClientesCadastrados rel = new IURelatorioClientesCadastrados(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuItemClientesCadastradosActionPerformed
+
+    private void jMenuItemClientesOuroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClientesOuroActionPerformed
+        
+        IURelatorioClientesOuro rel = new IURelatorioClientesOuro(this, false);
+        rel.setLocationRelativeTo(this);
+        rel.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemClientesOuroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -340,11 +357,12 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuCadastrar;
     private javax.swing.JMenu jMenuConsultar;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItemCadastrarCliente;
     private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
     private javax.swing.JMenuItem jMenuItemCadastrarProduto;
     private javax.swing.JMenuItem jMenuItemCadastrarVendedor;
+    private javax.swing.JMenuItem jMenuItemClientesCadastrados;
+    private javax.swing.JMenuItem jMenuItemClientesOuro;
     private javax.swing.JMenuItem jMenuItemRealizarVenda;
     private javax.swing.JMenuItem jMenuItemRelFornecedoresCadastrados;
     private javax.swing.JMenuItem jMenuItemRelProdutosAlimenticios;

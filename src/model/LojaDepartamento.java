@@ -194,4 +194,22 @@ public class LojaDepartamento {
         
         return clientes;
     }
+     
+      public static ArrayList<Cliente> getClientesOuro(){
+        ArrayList<Cliente> clientesOuro = new ArrayList<>();
+        
+        usuarios = getUsuarios();
+        
+        Iterator<Usuario> iterator = usuarios.iterator();
+        
+        while(iterator.hasNext()){
+            Usuario u = iterator.next();
+            
+            if(u instanceof Cliente && ((Cliente)u).isClienteOuro()){
+                clientesOuro.add((Cliente)u);
+            }
+        }
+        
+        return clientesOuro;
+    }
 }

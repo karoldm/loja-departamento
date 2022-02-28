@@ -7,7 +7,6 @@ import java.util.Iterator;
 
 
 import model.Cliente;
-import model.Fornecedor;
 import model.LojaDepartamento;
 import model.Usuario;
 import model.Vendedor;
@@ -132,6 +131,32 @@ public class ControladorUsuario {
     
     public Object[][] relatorioClientesCadastrados(){
         ArrayList<Cliente> clientes = LojaDepartamento.getClientes();
+
+        Object[][] clientesDados = new Object[clientes.size()][9];
+
+        Iterator<Cliente> iterator = clientes.iterator();
+
+        int i = 0;
+        while (iterator.hasNext()) {
+            Cliente c = iterator.next();
+
+            clientesDados[i][0] = c.getCodigoUsuario();
+            clientesDados[i][1] = c.getNome();
+            clientesDados[i][2] = c.getCpf();
+            clientesDados[i][3] = c.getRg();
+            clientesDados[i][4] = c.getDataNascimento().getTime();
+            clientesDados[i][5] = c.getEndereco();
+            clientesDados[i][6] = c.getCep();
+            clientesDados[i][7] = c.getEmail();
+            clientesDados[i][8] = c.isClienteOuro();
+            i++;
+        }
+
+        return clientesDados;
+    }
+    
+    public Object[][] relatorioClientesOuro(){
+        ArrayList<Cliente> clientes = LojaDepartamento.getClientesOuro();
 
         Object[][] clientesDados = new Object[clientes.size()][9];
 

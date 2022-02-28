@@ -1,3 +1,4 @@
+
 package view;
 
 import controller.ControladorUsuario;
@@ -9,49 +10,47 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author karol
  */
-public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
+public class IURelatorioClientesOuro extends javax.swing.JDialog {
 
     /**
-     * Creates new form IURelatorioClientesCadastrados
-     * @param parent
-     * @param modal
+     * Creates new form IURelatorioClientesOuro
      */
-    public IURelatorioClientesCadastrados(java.awt.Frame parent, boolean modal) {
+    public IURelatorioClientesOuro(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-
-        tabelaClientesCadastrados.getColumnModel().getColumn(0).setPreferredWidth(100);
-        tabelaClientesCadastrados.getColumnModel().getColumn(1).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(2).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(3).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(4).setPreferredWidth(400);
-        tabelaClientesCadastrados.getColumnModel().getColumn(5).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(6).setPreferredWidth(400);
-        tabelaClientesCadastrados.getColumnModel().getColumn(7).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(8).setPreferredWidth(100);
+        tabelaClientesOuro.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaClientesOuro.getColumnModel().getColumn(1).setPreferredWidth(300);
+        tabelaClientesOuro.getColumnModel().getColumn(2).setPreferredWidth(300);
+        tabelaClientesOuro.getColumnModel().getColumn(3).setPreferredWidth(300);
+        tabelaClientesOuro.getColumnModel().getColumn(4).setPreferredWidth(400);
+        tabelaClientesOuro.getColumnModel().getColumn(5).setPreferredWidth(300);
+        tabelaClientesOuro.getColumnModel().getColumn(6).setPreferredWidth(400);
+        tabelaClientesOuro.getColumnModel().getColumn(7).setPreferredWidth(300);
+        tabelaClientesOuro.getColumnModel().getColumn(8).setPreferredWidth(100);
 
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
 
         c.setHorizontalAlignment(SwingConstants.CENTER);
 
-        tabelaClientesCadastrados.getColumnModel().getColumn(0).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(1).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(2).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(3).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(4).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(5).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(6).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(7).setCellRenderer(c);
-        tabelaClientesCadastrados.getColumnModel().getColumn(8).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(0).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(1).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(2).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(3).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(4).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(5).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(6).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(7).setCellRenderer(c);
+        tabelaClientesOuro.getColumnModel().getColumn(8).setCellRenderer(c);
 
         ControladorUsuario controller = new ControladorUsuario();
-        Object[][] row = controller.relatorioClientesCadastrados();
+        Object[][] row = controller.relatorioClientesOuro();
 
-        DefaultTableModel modelo = (DefaultTableModel) tabelaClientesCadastrados.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) tabelaClientesOuro.getModel();
         
         for (int i = 0; i < row.length; i++) {      
             modelo.addRow(row[i]);
         }
+        
     }
 
     /**
@@ -63,18 +62,17 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane2 = new javax.swing.JScrollPane();
-        tabelaClientesCadastrados = new javax.swing.JTable();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tabelaClientesOuro = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Clientes  Cadastrados");
 
-        tabelaClientesCadastrados.setModel(new javax.swing.table.DefaultTableModel(
+        tabelaClientesOuro.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Código", "Nome", "CPF", "RG", "Nascimento", "Endereço", "CEP", "Email", "Ouro"
+                "Código", "Nome", "CPF", "RG", "Nascimento", "Endereço", "CEP", "Email", "Title 9"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -85,7 +83,7 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(tabelaClientesCadastrados);
+        jScrollPane1.setViewportView(tabelaClientesOuro);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,15 +91,15 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 831, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 914, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -124,20 +122,20 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioClientesCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioClientesOuro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioClientesCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioClientesOuro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioClientesCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioClientesOuro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(IURelatorioClientesCadastrados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(IURelatorioClientesOuro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                IURelatorioClientesCadastrados dialog = new IURelatorioClientesCadastrados(new javax.swing.JFrame(), true);
+                IURelatorioClientesOuro dialog = new IURelatorioClientesOuro(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -150,7 +148,7 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable tabelaClientesCadastrados;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tabelaClientesOuro;
     // End of variables declaration//GEN-END:variables
 }
