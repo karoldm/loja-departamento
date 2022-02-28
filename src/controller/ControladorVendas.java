@@ -50,4 +50,30 @@ public class ControladorVendas {
 
     }
     
+    public Object[][] relatorioVendasRealizadas(){
+        ArrayList<Venda> vendas = LojaDepartamento.getVendas();
+        
+        Object[][] vendasDados = new Object[vendas.size()][8];
+
+        Iterator<Venda> iterator = vendas.iterator();
+
+        int i = 0;
+        while (iterator.hasNext()) {
+            Venda v = iterator.next();
+
+            vendasDados[i][0] = v.getCodigoVenda();
+            vendasDados[i][1] = v.getCliente().getNome();
+            vendasDados[i][2] = v.getVendedor().getNome();
+            vendasDados[i][3] = v.getDataVenda().getTime();
+            vendasDados[i][4] = v.getItensVenda();
+            vendasDados[i][5] = v.getValorTotal();
+            vendasDados[i][6] = v.getValorDesconto();
+            vendasDados[i][7] = v.getFormaPagamento().getTipoPagamento();
+            i++;
+        }
+
+        return vendasDados;
+
+    }
+    
 }
