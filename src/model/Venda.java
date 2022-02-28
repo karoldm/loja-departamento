@@ -113,8 +113,6 @@ public class Venda implements Serializable{
             valorTotal -= valorDesconto;
         }
         
-        System.out.println(valorDesconto);
-        
         return valorTotal;
     }
     

@@ -46,6 +46,7 @@ public class IUHome extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jMenuItemVendasCliente = new javax.swing.JMenuItem();
         jMenuItemVendasRealizadas = new javax.swing.JMenuItem();
+        jMenuItemVendasDinheiro = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -198,6 +199,14 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItemVendasRealizadas);
+
+        jMenuItemVendasDinheiro.setText("vendas realizadas em dinheiro");
+        jMenuItemVendasDinheiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemVendasDinheiroActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItemVendasDinheiro);
 
         jMenuBar1.add(jMenuConsultar);
 
@@ -353,6 +362,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemVendasRealizadasActionPerformed
 
+    private void jMenuItemVendasDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasDinheiroActionPerformed
+        
+        IURelatorioVendasDinheiro rel = new IURelatorioVendasDinheiro(this, false);
+        rel.setLocationRelativeTo(this);
+        rel.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemVendasDinheiroActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -409,6 +426,7 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemRelProdutosVestuario;
     private javax.swing.JMenuItem jMenuItemRelVendedoresCadastrados;
     private javax.swing.JMenuItem jMenuItemVendasCliente;
+    private javax.swing.JMenuItem jMenuItemVendasDinheiro;
     private javax.swing.JMenuItem jMenuItemVendasRealizadas;
     private javax.swing.JMenu jMenuVenda;
     private javax.swing.JPopupMenu.Separator jSeparator1;
