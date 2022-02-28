@@ -247,5 +247,23 @@ public class LojaDepartamento {
 
         return vendasDinheiro;
     }
+    
+    public static ArrayList<Venda> getVendasMes(String mes) {
+        ArrayList<Venda> vendasMes = new ArrayList<>();
+
+        vendas = getVendas();
+
+        Iterator<Venda> iterator = vendas.iterator();
+
+        while (iterator.hasNext()) {
+            Venda v = iterator.next();
+
+            if (v.getDataVenda().MONTH == Integer.parseInt(mes)) {
+                vendasMes.add(v);
+            }
+        }
+
+        return vendasMes;
+    }
    
 }
