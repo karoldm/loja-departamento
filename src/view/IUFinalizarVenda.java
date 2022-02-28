@@ -68,6 +68,8 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
         jTextFieldValorDesconto.setText(Float.toString(venda.getValorDesconto()));
         jTextFieldDataVenda.setText(
                 data.DATE + "/" + data.MONTH + "/" + data.YEAR);
+        
+        pagamento = new Dinheiro();
     }
 
     private IUFinalizarVenda(JFrame jFrame, boolean b) {
@@ -330,8 +332,6 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
             jLabelNomeCC.setEnabled(true);
             jLabelBandeiraCC.setEnabled(true);
             jLabelNumeroCC.setEnabled(true);
-        } else {
-            pagamento = new Dinheiro();
         }
     }//GEN-LAST:event_jComboBoxPagamentoActionPerformed
 

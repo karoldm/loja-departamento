@@ -212,4 +212,22 @@ public class LojaDepartamento {
         
         return clientesOuro;
     }
+      
+      public static ArrayList<Venda> vendasCliente(int codigo){
+          ArrayList<Venda> vendasCliente = new ArrayList<>();
+        
+        vendas = getVendas();
+        
+        Iterator<Venda> iterator = vendas.iterator();
+        
+        while(iterator.hasNext()){
+            Venda v = iterator.next();
+            
+            if(v.getCliente().getCodigoUsuario() == codigo){
+                vendasCliente.add(v);
+            }
+        }
+        
+        return vendasCliente;
+      }
 }

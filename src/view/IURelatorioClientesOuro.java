@@ -18,6 +18,7 @@ public class IURelatorioClientesOuro extends javax.swing.JDialog {
     public IURelatorioClientesOuro(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
         tabelaClientesOuro.getColumnModel().getColumn(0).setPreferredWidth(100);
         tabelaClientesOuro.getColumnModel().getColumn(1).setPreferredWidth(300);
         tabelaClientesOuro.getColumnModel().getColumn(2).setPreferredWidth(300);
