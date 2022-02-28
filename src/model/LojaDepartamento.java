@@ -230,7 +230,7 @@ public class LojaDepartamento {
         return vendasCliente;
     }
 
-    public static ArrayList<Venda> vendasDinheiro() {
+    public static ArrayList<Venda> getVendasByTipoPagamento(String tipo) {
         ArrayList<Venda> vendasDinheiro = new ArrayList<>();
 
         vendas = getVendas();
@@ -240,11 +240,12 @@ public class LojaDepartamento {
         while (iterator.hasNext()) {
             Venda v = iterator.next();
 
-            if (v.getFormaPagamento().getTipoPagamento().equals("Dinheiro")) {
+            if (v.getFormaPagamento().getTipoPagamento().equals(tipo)) {
                 vendasDinheiro.add(v);
             }
         }
 
         return vendasDinheiro;
     }
+   
 }

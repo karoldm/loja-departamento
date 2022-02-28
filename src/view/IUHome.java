@@ -47,6 +47,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemVendasCliente = new javax.swing.JMenuItem();
         jMenuItemVendasRealizadas = new javax.swing.JMenuItem();
         jMenuItemVendasDinheiro = new javax.swing.JMenuItem();
+        jMenuItemVendasPIX = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -207,6 +208,14 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItemVendasDinheiro);
+
+        jMenuItemVendasPIX.setText("vendas realizadas em PIX");
+        jMenuItemVendasPIX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemVendasPIXActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItemVendasPIX);
 
         jMenuBar1.add(jMenuConsultar);
 
@@ -370,6 +379,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItemVendasDinheiroActionPerformed
 
+    private void jMenuItemVendasPIXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasPIXActionPerformed
+        
+        IURelatorioVendasPIX rel = new IURelatorioVendasPIX(this, false);
+        rel.setLocationRelativeTo(this);
+        rel.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemVendasPIXActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -427,6 +444,7 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemRelVendedoresCadastrados;
     private javax.swing.JMenuItem jMenuItemVendasCliente;
     private javax.swing.JMenuItem jMenuItemVendasDinheiro;
+    private javax.swing.JMenuItem jMenuItemVendasPIX;
     private javax.swing.JMenuItem jMenuItemVendasRealizadas;
     private javax.swing.JMenu jMenuVenda;
     private javax.swing.JPopupMenu.Separator jSeparator1;
