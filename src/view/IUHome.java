@@ -50,6 +50,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemVendasPIX = new javax.swing.JMenuItem();
         jMenuItemVendasCartao = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItemVendedorMes = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
@@ -234,6 +235,14 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItem1);
+
+        jMenuItemVendedorMes.setText("vendedor do mês");
+        jMenuItemVendedorMes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemVendedorMesActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItemVendedorMes);
 
         jMenuBar1.add(jMenuConsultar);
 
@@ -421,6 +430,14 @@ public class IUHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
+    private void jMenuItemVendedorMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendedorMesActionPerformed
+        
+        IURelatorioVendedorMes rel = new IURelatorioVendedorMes(this, false);
+        rel.setLocationRelativeTo(this);
+        rel.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItemVendedorMesActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -482,6 +499,7 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemVendasDinheiro;
     private javax.swing.JMenuItem jMenuItemVendasPIX;
     private javax.swing.JMenuItem jMenuItemVendasRealizadas;
+    private javax.swing.JMenuItem jMenuItemVendedorMes;
     private javax.swing.JMenu jMenuVenda;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;

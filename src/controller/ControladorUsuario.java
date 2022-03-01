@@ -1,14 +1,13 @@
-
 package controller;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 
-
 import model.Cliente;
 import model.LojaDepartamento;
 import model.Usuario;
+import model.Venda;
 import model.Vendedor;
 
 /**
@@ -17,24 +16,25 @@ import model.Vendedor;
  */
 public class ControladorUsuario {
 
-    public ControladorUsuario(){}
-    
+    public ControladorUsuario() {
+    }
+
     public void addUsuario(
-        boolean clienteOuro,
-        int codigo, 
-        String nome, 
-        String cpf, 
-        String rg, 
-        String dia, String mes, String ano,
-        String endereco, 
-        String cep, 
-        String email) {
-        
+            boolean clienteOuro,
+            int codigo,
+            String nome,
+            String cpf,
+            String rg,
+            String dia, String mes, String ano,
+            String endereco,
+            String cep,
+            String email) {
+
         Calendar data = Calendar.getInstance();
-        data.set(Integer.parseInt(ano), 
-                Integer.parseInt(mes), 
+        data.set(Integer.parseInt(ano),
+                Integer.parseInt(mes),
                 Integer.parseInt(dia));
-        
+
         Usuario cliente = new Cliente(
                 clienteOuro,
                 codigo,
@@ -46,33 +46,33 @@ public class ControladorUsuario {
                 cep,
                 email
         );
-        
+
         LojaDepartamento.addUsuario(cliente);
     }
-    
+
     public void addUsuario(
-        float salario,
-        String pis,
-        String diaA, String mesA, String anoA,
-        int codigo, 
-        String nome, 
-        String cpf, 
-        String rg, 
-        String diaN, String mesN, String anoN,
-        String endereco, 
-        String cep, 
-        String email) {
-        
+            float salario,
+            String pis,
+            String diaA, String mesA, String anoA,
+            int codigo,
+            String nome,
+            String cpf,
+            String rg,
+            String diaN, String mesN, String anoN,
+            String endereco,
+            String cep,
+            String email) {
+
         Calendar dataN = Calendar.getInstance();
-        dataN.set(Integer.parseInt(anoN), 
-                Integer.parseInt(mesN), 
+        dataN.set(Integer.parseInt(anoN),
+                Integer.parseInt(mesN),
                 Integer.parseInt(diaN));
-        
+
         Calendar dataA = Calendar.getInstance();
-        dataA.set(Integer.parseInt(anoA), 
-                Integer.parseInt(mesA), 
+        dataA.set(Integer.parseInt(anoA),
+                Integer.parseInt(mesA),
                 Integer.parseInt(diaA));
-        
+
         Usuario vendedor = new Vendedor(
                 salario,
                 pis,
@@ -86,22 +86,24 @@ public class ControladorUsuario {
                 cep,
                 email
         );
-        
+
         LojaDepartamento.addUsuario(vendedor);
     }
-    
-    public int getTamanhoUsuarios(){
+
+    public int getTamanhoUsuarios() {
         return LojaDepartamento.getTamanhoUsuarios();
     }
-    
-    public Usuario getUsuarioByCodigo(int codigo){
-        for(Usuario u: LojaDepartamento.getUsuarios()){
-            if(u.getCodigoUsuario() == codigo) return u;
+
+    public Usuario getUsuarioByCodigo(int codigo) {
+        for (Usuario u : LojaDepartamento.getUsuarios()) {
+            if (u.getCodigoUsuario() == codigo) {
+                return u;
+            }
         }
         return null;
     }
-    
-    public Object[][] relatorioVendedoresCadastrados(){
+
+    public Object[][] relatorioVendedoresCadastrados() {
         ArrayList<Vendedor> vendedores = LojaDepartamento.getVendedores();
 
         Object[][] vendedoresDados = new Object[vendedores.size()][11];
@@ -128,8 +130,8 @@ public class ControladorUsuario {
 
         return vendedoresDados;
     }
-    
-    public Object[][] relatorioClientesCadastrados(){
+
+    public Object[][] relatorioClientesCadastrados() {
         ArrayList<Cliente> clientes = LojaDepartamento.getClientes();
 
         Object[][] clientesDados = new Object[clientes.size()][9];
@@ -154,8 +156,8 @@ public class ControladorUsuario {
 
         return clientesDados;
     }
-    
-    public Object[][] relatorioClientesOuro(){
+
+    public Object[][] relatorioClientesOuro() {
         ArrayList<Cliente> clientes = LojaDepartamento.getClientesOuro();
 
         Object[][] clientesDados = new Object[clientes.size()][9];
@@ -179,5 +181,79 @@ public class ControladorUsuario {
         }
 
         return clientesDados;
+    }
+
+    public Vendedor getVendedorByCodigo(int codigo) {
+        ArrayList<Vendedor> vendedores = LojaDepartamento.getVendedores();
+
+        Iterator<Vendedor> iterator = vendedores.iterator();
+
+        while (iterator.hasNext()) {
+            Vendedor vendedor = iterator.next();
+            if (vendedor.getCodigoUsuario() == codigo) {
+                return vendedor;
+            }
+        }
+
+        return null;
+    }
+
+    public Object[][] relatorioVendedorMes(int mes) {
+        int[] vendasPorVendedor = new int[LojaDepartamento.getTamanhoUsuarios()];
+        ArrayList<Venda> vendas = LojaDepartamento.getVendas();
+
+        Iterator<Venda> iteratorVendas = vendas.iterator();
+
+        while (iteratorVendas.hasNext()) {
+            Venda venda = iteratorVendas.next();
+            
+            if (venda.getDataVenda().MONTH == mes) {
+                vendasPorVendedor[venda.getVendedor().getCodigoUsuario()] += 1;
+            }
+        }
+
+        int maioresVendas = vendasPorVendedor[0];
+
+        for (int i = 1; i < vendasPorVendedor.length; i++) {
+            if (vendasPorVendedor[i] > maioresVendas) {
+                maioresVendas = vendasPorVendedor[i];
+            }
+        }
+
+        ArrayList<Vendedor> vendedoresMes = new ArrayList<>();
+
+        if (maioresVendas > 0) {
+            for (int i = 1; i < vendasPorVendedor.length; i++) {
+                if (vendasPorVendedor[i] == maioresVendas) {
+                    Vendedor vendedor = getVendedorByCodigo(i);
+                    if (vendedor != null) {
+                        vendedoresMes.add(vendedor);
+                    }
+                }
+            }
+        }
+
+        Object[][] vendedoresMesDados = new Object[vendedoresMes.size()][11];
+        Iterator<Vendedor> iteratorVendedoresMes = vendedoresMes.iterator();
+
+        int i = 0;
+        while (iteratorVendedoresMes.hasNext()) {
+            Vendedor v = iteratorVendedoresMes.next();
+
+            vendedoresMesDados[i][0] = v.getCodigoUsuario();
+            vendedoresMesDados[i][1] = v.getNome();
+            vendedoresMesDados[i][2] = v.getCpf();
+            vendedoresMesDados[i][3] = v.getRg();
+            vendedoresMesDados[i][4] = v.getDataNascimento().getTime();
+            vendedoresMesDados[i][5] = v.getEndereco();
+            vendedoresMesDados[i][6] = v.getCep();
+            vendedoresMesDados[i][7] = v.getEmail();
+            vendedoresMesDados[i][8] = v.getSalario();
+            vendedoresMesDados[i][9] = v.getPis();
+            vendedoresMesDados[i][10] = v.getDataAdmissao().getTime();
+            i++;
+        }
+
+        return vendedoresMesDados;
     }
 }

@@ -160,6 +160,10 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
         
         DefaultTableModel modelo = (DefaultTableModel) tabelaVendasMes.getModel();
         
+         for(int i = 0; i < modelo.getRowCount(); i++){
+            modelo.removeRow(i);
+         }
+        
         for(int i = 0; i < row.length; i++){
             modelo.addRow(row[i]);
             total += (float)row[i][5];
