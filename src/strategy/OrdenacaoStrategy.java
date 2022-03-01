@@ -12,4 +12,7 @@ public abstract class OrdenacaoStrategy {
     
     public abstract ArrayList<Produto> ordenar(ArrayList<Produto> produtos);
     
+   @Override
+   public abstract String toString();
+    
 }

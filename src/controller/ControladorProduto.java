@@ -15,6 +15,10 @@ import model.LojaDepartamento;
 import model.Produto;
 import model.Venda;
 import model.Vestuario;
+import strategy.Contexto;
+import strategy.OrdenacaoStrategy;
+import strategy.StrategyOrdenacaoInsertionSort;
+import strategy.StrategyOrdenacaoQuickSort;
 
 /**
  *
@@ -325,5 +329,45 @@ public class ControladorProduto {
         }
 
         return fornecedoresDados;
+    }
+    
+    public Object[][] getProdutosOrdenados(String strategy){
+        OrdenacaoStrategy ordenacaoStrategy = null;
+        
+        switch(strategy){
+            case "Quick Sort": 
+                ordenacaoStrategy = new StrategyOrdenacaoQuickSort();
+                break;
+            case "Insertion Sort":
+                ordenacaoStrategy = new StrategyOrdenacaoInsertionSort();
+                break;
+        }
+        
+        Contexto con = new Contexto();
+        con.setStrategy(ordenacaoStrategy);
+        
+        ArrayList<Produto> produtos = LojaDepartamento.getProdutos();
+        
+        con.executeEstrategy(produtos);
+        
+        Object[][] produtosDados = new Object[produtos.size()][7];
+
+        Iterator<Produto> iterator = produtos.iterator();
+
+        int i = 0;
+        while (iterator.hasNext()) {
+            Produto p = iterator.next();
+
+            produtosDados[i][0] = p.getCodigoProduto();
+            produtosDados[i][1] = p.getNome();
+            produtosDados[i][2] = p.getDescricao();
+            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][4] = p.getValor();
+            produtosDados[i][5] = p.getFornecedor();
+            produtosDados[i][6] = p.isDisponivel();
+            i++;
+        }
+
+        return produtosDados;
     }
 }
