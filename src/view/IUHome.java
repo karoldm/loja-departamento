@@ -207,6 +207,8 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItemRelFornecedoresCadastrados);
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jMenuConsultar.add(jSeparator1);
 
         jMenuItemRelVendedoresCadastrados.setBackground(new java.awt.Color(255, 255, 255));
@@ -238,6 +240,8 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItemClientesOuro);
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
         jMenuConsultar.add(jSeparator2);
 
         jMenuItemVendasCliente.setBackground(new java.awt.Color(255, 255, 255));
