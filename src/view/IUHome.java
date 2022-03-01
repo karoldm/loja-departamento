@@ -11,6 +11,7 @@ public class IUHome extends javax.swing.JFrame {
      */
     public IUHome() {
         initComponents();
+        
     }
 
     /**
@@ -22,6 +23,7 @@ public class IUHome extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        labelBackground = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuCadastrar = new javax.swing.JMenu();
         jMenuItemCadastrarCliente = new javax.swing.JMenuItem();
@@ -49,15 +51,24 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemVendasDinheiro = new javax.swing.JMenuItem();
         jMenuItemVendasPIX = new javax.swing.JMenuItem();
         jMenuItemVendasCartao = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItemVendasMes = new javax.swing.JMenuItem();
         jMenuItemVendedorMes = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
+        setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(626, 469));
         setResizable(false);
 
+        labelBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/background.jpg"))); // NOI18N
+        labelBackground.setPreferredSize(new java.awt.Dimension(626, 469));
+
+        jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jMenuCadastrar.setBackground(new java.awt.Color(255, 255, 255));
         jMenuCadastrar.setText("cadastrar");
 
+        jMenuItemCadastrarCliente.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemCadastrarCliente.setText("cliente");
         jMenuItemCadastrarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,6 +77,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuCadastrar.add(jMenuItemCadastrarCliente);
 
+        jMenuItemCadastrarVendedor.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemCadastrarVendedor.setText("vendedor");
         jMenuItemCadastrarVendedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +86,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuCadastrar.add(jMenuItemCadastrarVendedor);
 
+        jMenuItemCadastrarFornecedor.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemCadastrarFornecedor.setText("fornecedor");
         jMenuItemCadastrarFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +95,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuCadastrar.add(jMenuItemCadastrarFornecedor);
 
+        jMenuItemCadastrarProduto.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemCadastrarProduto.setText("produto");
         jMenuItemCadastrarProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,8 +106,10 @@ public class IUHome extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuCadastrar);
 
+        jMenuVenda.setBackground(new java.awt.Color(255, 255, 255));
         jMenuVenda.setText("venda");
 
+        jMenuItemRealizarVenda.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRealizarVenda.setText("realizar venda");
         jMenuItemRealizarVenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,8 +120,10 @@ public class IUHome extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuVenda);
 
+        jMenuConsultar.setBackground(new java.awt.Color(255, 255, 255));
         jMenuConsultar.setText("consultar");
 
+        jMenuItemRelProdutosCadastrados.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelProdutosCadastrados.setText("produtos cadastrados");
         jMenuItemRelProdutosCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,6 +132,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelProdutosCadastrados);
 
+        jMenuItemRelProdutosAlimenticios.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelProdutosAlimenticios.setText("produtos alimentícios");
         jMenuItemRelProdutosAlimenticios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,6 +141,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelProdutosAlimenticios);
 
+        jMenuItemRelProdutosEletrodomesticos.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelProdutosEletrodomesticos.setText("produtos eletrodomesticos");
         jMenuItemRelProdutosEletrodomesticos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +150,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelProdutosEletrodomesticos);
 
+        jMenuItemRelProdutosEletronicos.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelProdutosEletronicos.setText("produtos eletrônicos");
         jMenuItemRelProdutosEletronicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,6 +159,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelProdutosEletronicos);
 
+        jMenuItemRelProdutosVestuario.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelProdutosVestuario.setText("produtos vestuário");
         jMenuItemRelProdutosVestuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,6 +168,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelProdutosVestuario);
 
+        jMenuItem2.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItem2.setText("produtos ordenados");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,6 +177,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItem2);
 
+        jMenuItemRelProdutosMaisVendidos.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelProdutosMaisVendidos.setText("dez produtos mais vendidos");
         jMenuItemRelProdutosMaisVendidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,6 +186,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelProdutosMaisVendidos);
 
+        jMenuItemRelFornecedoresCadastrados.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelFornecedoresCadastrados.setText("fornecedores cadastrados");
         jMenuItemRelFornecedoresCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,6 +196,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelFornecedoresCadastrados);
         jMenuConsultar.add(jSeparator1);
 
+        jMenuItemRelVendedoresCadastrados.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemRelVendedoresCadastrados.setText("vendedores cadastrados");
         jMenuItemRelVendedoresCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,6 +205,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelVendedoresCadastrados);
 
+        jMenuItemClientesCadastrados.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemClientesCadastrados.setText("clientes cadastrados");
         jMenuItemClientesCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,6 +214,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemClientesCadastrados);
 
+        jMenuItemClientesOuro.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemClientesOuro.setText("clientes de ouro");
         jMenuItemClientesOuro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -196,6 +224,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemClientesOuro);
         jMenuConsultar.add(jSeparator2);
 
+        jMenuItemVendasCliente.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendasCliente.setText("vendas de um cliente");
         jMenuItemVendasCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,6 +233,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemVendasCliente);
 
+        jMenuItemVendasRealizadas.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendasRealizadas.setText("vendas realizadas");
         jMenuItemVendasRealizadas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,6 +242,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemVendasRealizadas);
 
+        jMenuItemVendasDinheiro.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendasDinheiro.setText("vendas realizadas em dinheiro");
         jMenuItemVendasDinheiro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,6 +251,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemVendasDinheiro);
 
+        jMenuItemVendasPIX.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendasPIX.setText("vendas realizadas em PIX");
         jMenuItemVendasPIX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,6 +260,7 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemVendasPIX);
 
+        jMenuItemVendasCartao.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendasCartao.setText("vendas realizadas em cartão de crédito");
         jMenuItemVendasCartao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,14 +269,16 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemVendasCartao);
 
-        jMenuItem1.setText("vendas mês");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemVendasMes.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendasMes.setText("vendas mês");
+        jMenuItemVendasMes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItemVendasMesActionPerformed(evt);
             }
         });
-        jMenuConsultar.add(jMenuItem1);
+        jMenuConsultar.add(jMenuItemVendasMes);
 
+        jMenuItemVendedorMes.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendedorMes.setText("vendedor do mês");
         jMenuItemVendedorMes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -260,11 +295,15 @@ public class IUHome extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(labelBackground, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(labelBackground, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
         pack();
@@ -430,13 +469,13 @@ public class IUHome extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jMenuItemVendasCartaoActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItemVendasMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasMesActionPerformed
 
         IURelatorioVendasMes rel = new IURelatorioVendasMes(this, false);
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuItemVendasMesActionPerformed
 
     private void jMenuItemVendedorMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendedorMesActionPerformed
 
@@ -494,7 +533,6 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu jMenuCadastrar;
     private javax.swing.JMenu jMenuConsultar;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItemCadastrarCliente;
     private javax.swing.JMenuItem jMenuItemCadastrarFornecedor;
@@ -514,11 +552,13 @@ public class IUHome extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemVendasCartao;
     private javax.swing.JMenuItem jMenuItemVendasCliente;
     private javax.swing.JMenuItem jMenuItemVendasDinheiro;
+    private javax.swing.JMenuItem jMenuItemVendasMes;
     private javax.swing.JMenuItem jMenuItemVendasPIX;
     private javax.swing.JMenuItem jMenuItemVendasRealizadas;
     private javax.swing.JMenuItem jMenuItemVendedorMes;
     private javax.swing.JMenu jMenuVenda;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JLabel labelBackground;
     // End of variables declaration//GEN-END:variables
 }
