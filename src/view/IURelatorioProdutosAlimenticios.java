@@ -19,13 +19,13 @@ public class IURelatorioProdutosAlimenticios extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaProdutosAlimenticios.getColumnModel().getColumn(0).setPreferredWidth(100);
-        tabelaProdutosAlimenticios.getColumnModel().getColumn(1).setPreferredWidth(200);
-        tabelaProdutosAlimenticios.getColumnModel().getColumn(2).setPreferredWidth(300);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(0).setPreferredWidth(150);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(1).setPreferredWidth(300);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(2).setPreferredWidth(400);
         tabelaProdutosAlimenticios.getColumnModel().getColumn(3).setPreferredWidth(200);
-        tabelaProdutosAlimenticios.getColumnModel().getColumn(4).setPreferredWidth(100);
-        tabelaProdutosAlimenticios.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tabelaProdutosAlimenticios.getColumnModel().getColumn(6).setPreferredWidth(100);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(4).setPreferredWidth(150);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(5).setPreferredWidth(200);
+        tabelaProdutosAlimenticios.getColumnModel().getColumn(6).setPreferredWidth(200);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
@@ -63,7 +63,7 @@ public class IURelatorioProdutosAlimenticios extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Produtos Alimentícios");
-        setPreferredSize(new java.awt.Dimension(908, 366));
+        setPreferredSize(new java.awt.Dimension(700, 300));
         setResizable(false);
 
         tabelaProdutosAlimenticios.setModel(new javax.swing.table.DefaultTableModel(
@@ -90,14 +90,14 @@ public class IURelatorioProdutosAlimenticios extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 839, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
 

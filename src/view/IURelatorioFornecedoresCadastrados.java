@@ -19,13 +19,13 @@ public class IURelatorioFornecedoresCadastrados extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaFornecedoresCadastrados.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaFornecedoresCadastrados.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaFornecedoresCadastrados.getColumnModel().getColumn(1).setPreferredWidth(200);
         tabelaFornecedoresCadastrados.getColumnModel().getColumn(2).setPreferredWidth(200);
-        tabelaFornecedoresCadastrados.getColumnModel().getColumn(3).setPreferredWidth(300);
-        tabelaFornecedoresCadastrados.getColumnModel().getColumn(4).setPreferredWidth(200);
+        tabelaFornecedoresCadastrados.getColumnModel().getColumn(3).setPreferredWidth(400);
+        tabelaFornecedoresCadastrados.getColumnModel().getColumn(4).setPreferredWidth(300);
         tabelaFornecedoresCadastrados.getColumnModel().getColumn(5).setPreferredWidth(200);
-        tabelaFornecedoresCadastrados.getColumnModel().getColumn(6).setPreferredWidth(200);
+        tabelaFornecedoresCadastrados.getColumnModel().getColumn(6).setPreferredWidth(300);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
@@ -63,6 +63,7 @@ public class IURelatorioFornecedoresCadastrados extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Fornecedores Cadastrados");
+        setPreferredSize(new java.awt.Dimension(800, 300));
 
         tabelaFornecedoresCadastrados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -88,14 +89,14 @@ public class IURelatorioFornecedoresCadastrados extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 839, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
 

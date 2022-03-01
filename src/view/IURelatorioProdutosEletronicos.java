@@ -19,13 +19,13 @@ public class IURelatorioProdutosEletronicos extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaProdutosEletronicos.getColumnModel().getColumn(0).setPreferredWidth(100);
-        tabelaProdutosEletronicos.getColumnModel().getColumn(1).setPreferredWidth(200);
-        tabelaProdutosEletronicos.getColumnModel().getColumn(2).setPreferredWidth(300);
+        tabelaProdutosEletronicos.getColumnModel().getColumn(0).setPreferredWidth(150);
+        tabelaProdutosEletronicos.getColumnModel().getColumn(1).setPreferredWidth(300);
+        tabelaProdutosEletronicos.getColumnModel().getColumn(2).setPreferredWidth(400);
         tabelaProdutosEletronicos.getColumnModel().getColumn(3).setPreferredWidth(200);
-        tabelaProdutosEletronicos.getColumnModel().getColumn(4).setPreferredWidth(100);
-        tabelaProdutosEletronicos.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tabelaProdutosEletronicos.getColumnModel().getColumn(6).setPreferredWidth(100);
+        tabelaProdutosEletronicos.getColumnModel().getColumn(4).setPreferredWidth(150);
+        tabelaProdutosEletronicos.getColumnModel().getColumn(5).setPreferredWidth(200);
+        tabelaProdutosEletronicos.getColumnModel().getColumn(6).setPreferredWidth(200);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
@@ -63,6 +63,7 @@ public class IURelatorioProdutosEletronicos extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Produtos Eletrônicos");
+        setPreferredSize(new java.awt.Dimension(700, 300));
 
         tabelaProdutosEletronicos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,7 +96,7 @@ public class IURelatorioProdutosEletronicos extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
 

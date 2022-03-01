@@ -22,14 +22,14 @@ public class IURelatorioVendasCliente extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
 
-        tabelaVendaCliente.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaVendaCliente.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaVendaCliente.getColumnModel().getColumn(1).setPreferredWidth(300);
         tabelaVendaCliente.getColumnModel().getColumn(2).setPreferredWidth(300);
         tabelaVendaCliente.getColumnModel().getColumn(3).setPreferredWidth(300);
         tabelaVendaCliente.getColumnModel().getColumn(4).setPreferredWidth(400);
-        tabelaVendaCliente.getColumnModel().getColumn(5).setPreferredWidth(300);
-        tabelaVendaCliente.getColumnModel().getColumn(6).setPreferredWidth(400);
-        tabelaVendaCliente.getColumnModel().getColumn(7).setPreferredWidth(300);
+        tabelaVendaCliente.getColumnModel().getColumn(5).setPreferredWidth(200);
+        tabelaVendaCliente.getColumnModel().getColumn(6).setPreferredWidth(200);
+        tabelaVendaCliente.getColumnModel().getColumn(7).setPreferredWidth(200);
 
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
 
@@ -62,6 +62,8 @@ public class IURelatorioVendasCliente extends javax.swing.JDialog {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Vendas por Cliente");
+        setPreferredSize(new java.awt.Dimension(900, 300));
 
         tabelaVendaCliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,28 +97,28 @@ public class IURelatorioVendasCliente extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
                         .addComponent(TextFieldCodigoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 271, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(TextFieldCodigoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();

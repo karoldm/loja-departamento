@@ -19,14 +19,14 @@ public class IURelatorioVendasDinheiro extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaVendasDinheiro.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaVendasDinheiro.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaVendasDinheiro.getColumnModel().getColumn(1).setPreferredWidth(300);
         tabelaVendasDinheiro.getColumnModel().getColumn(2).setPreferredWidth(300);
         tabelaVendasDinheiro.getColumnModel().getColumn(3).setPreferredWidth(300);
         tabelaVendasDinheiro.getColumnModel().getColumn(4).setPreferredWidth(400);
-        tabelaVendasDinheiro.getColumnModel().getColumn(5).setPreferredWidth(300);
-        tabelaVendasDinheiro.getColumnModel().getColumn(6).setPreferredWidth(400);
-        tabelaVendasDinheiro.getColumnModel().getColumn(7).setPreferredWidth(300);
+        tabelaVendasDinheiro.getColumnModel().getColumn(5).setPreferredWidth(200);
+        tabelaVendasDinheiro.getColumnModel().getColumn(6).setPreferredWidth(200);
+        tabelaVendasDinheiro.getColumnModel().getColumn(7).setPreferredWidth(200);
 
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
 
@@ -65,6 +65,8 @@ public class IURelatorioVendasDinheiro extends javax.swing.JDialog {
         tabelaVendasDinheiro = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Vendas Realizadas em Dinheiro");
+        setPreferredSize(new java.awt.Dimension(900, 300));
 
         tabelaVendasDinheiro.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -89,16 +91,16 @@ public class IURelatorioVendasDinheiro extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1033, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1003, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();

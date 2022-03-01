@@ -19,14 +19,14 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaVendasMes.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaVendasMes.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaVendasMes.getColumnModel().getColumn(1).setPreferredWidth(300);
         tabelaVendasMes.getColumnModel().getColumn(2).setPreferredWidth(300);
         tabelaVendasMes.getColumnModel().getColumn(3).setPreferredWidth(300);
         tabelaVendasMes.getColumnModel().getColumn(4).setPreferredWidth(400);
-        tabelaVendasMes.getColumnModel().getColumn(5).setPreferredWidth(300);
-        tabelaVendasMes.getColumnModel().getColumn(6).setPreferredWidth(400);
-        tabelaVendasMes.getColumnModel().getColumn(7).setPreferredWidth(300);
+        tabelaVendasMes.getColumnModel().getColumn(5).setPreferredWidth(200);
+        tabelaVendasMes.getColumnModel().getColumn(6).setPreferredWidth(200);
+        tabelaVendasMes.getColumnModel().getColumn(7).setPreferredWidth(200);
 
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
 
@@ -61,6 +61,8 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
         jTextFieldLucro = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Vendas Realizadas por Mês");
+        setPreferredSize(new java.awt.Dimension(900, 300));
 
         tabelaVendasMes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -105,9 +107,9 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 804, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -120,14 +122,14 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
                                 .addComponent(jTextFieldLucro, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
+                        .addGap(25, 25, 25)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
                             .addComponent(jComboBoxMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -135,13 +137,13 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
                             .addComponent(jTextFieldLucro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();

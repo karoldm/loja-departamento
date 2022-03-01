@@ -22,13 +22,13 @@ public class IURelatorioProdutosOrdenados extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
 
-        tabelaProdutosOrdenados.getColumnModel().getColumn(0).setPreferredWidth(100);
-        tabelaProdutosOrdenados.getColumnModel().getColumn(1).setPreferredWidth(200);
-        tabelaProdutosOrdenados.getColumnModel().getColumn(2).setPreferredWidth(300);
+        tabelaProdutosOrdenados.getColumnModel().getColumn(0).setPreferredWidth(150);
+        tabelaProdutosOrdenados.getColumnModel().getColumn(1).setPreferredWidth(300);
+        tabelaProdutosOrdenados.getColumnModel().getColumn(2).setPreferredWidth(400);
         tabelaProdutosOrdenados.getColumnModel().getColumn(3).setPreferredWidth(200);
-        tabelaProdutosOrdenados.getColumnModel().getColumn(4).setPreferredWidth(100);
-        tabelaProdutosOrdenados.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tabelaProdutosOrdenados.getColumnModel().getColumn(6).setPreferredWidth(100);
+        tabelaProdutosOrdenados.getColumnModel().getColumn(4).setPreferredWidth(150);
+        tabelaProdutosOrdenados.getColumnModel().getColumn(5).setPreferredWidth(200);
+        tabelaProdutosOrdenados.getColumnModel().getColumn(6).setPreferredWidth(200);
 
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
 
@@ -60,6 +60,8 @@ public class IURelatorioProdutosOrdenados extends javax.swing.JDialog {
         buttonOrdenar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Produtos Ordenados por Valor");
+        setPreferredSize(new java.awt.Dimension(700, 300));
 
         tabelaProdutosOrdenados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,28 +97,28 @@ public class IURelatorioProdutosOrdenados extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1004, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 974, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(comboBoxAlgoritmo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(buttonOrdenar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(comboBoxAlgoritmo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonOrdenar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();

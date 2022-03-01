@@ -19,18 +19,18 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaVendedorMes.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaVendedorMes.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaVendedorMes.getColumnModel().getColumn(1).setPreferredWidth(300);
         tabelaVendedorMes.getColumnModel().getColumn(2).setPreferredWidth(300);
         tabelaVendedorMes.getColumnModel().getColumn(3).setPreferredWidth(300);
-        tabelaVendedorMes.getColumnModel().getColumn(4).setPreferredWidth(400);
-        tabelaVendedorMes.getColumnModel().getColumn(5).setPreferredWidth(300);
+        tabelaVendedorMes.getColumnModel().getColumn(4).setPreferredWidth(300);
+        tabelaVendedorMes.getColumnModel().getColumn(5).setPreferredWidth(400);
         tabelaVendedorMes.getColumnModel().getColumn(6).setPreferredWidth(400);
-        tabelaVendedorMes.getColumnModel().getColumn(7).setPreferredWidth(300);
+        tabelaVendedorMes.getColumnModel().getColumn(7).setPreferredWidth(400);
         tabelaVendedorMes.getColumnModel().getColumn(8).setPreferredWidth(200);
         tabelaVendedorMes.getColumnModel().getColumn(9).setPreferredWidth(200);
         tabelaVendedorMes.getColumnModel().getColumn(10).setPreferredWidth(300);
-        tabelaVendedorMes.getColumnModel().getColumn(10).setPreferredWidth(100);
+        tabelaVendedorMes.getColumnModel().getColumn(11).setPreferredWidth(150);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
@@ -66,6 +66,8 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
         buttonBuscar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Vendedor do Mês");
+        setPreferredSize(new java.awt.Dimension(1250, 300));
 
         tabelaVendedorMes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -101,28 +103,28 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1080, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1050, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jComboBoxMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(buttonBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jComboBoxMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();

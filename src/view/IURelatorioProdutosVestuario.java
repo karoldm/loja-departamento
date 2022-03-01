@@ -19,13 +19,13 @@ public class IURelatorioProdutosVestuario extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaProdutosVestuario.getColumnModel().getColumn(0).setPreferredWidth(100);
-        tabelaProdutosVestuario.getColumnModel().getColumn(1).setPreferredWidth(200);
-        tabelaProdutosVestuario.getColumnModel().getColumn(2).setPreferredWidth(300);
+        tabelaProdutosVestuario.getColumnModel().getColumn(0).setPreferredWidth(150);
+        tabelaProdutosVestuario.getColumnModel().getColumn(1).setPreferredWidth(300);
+        tabelaProdutosVestuario.getColumnModel().getColumn(2).setPreferredWidth(400);
         tabelaProdutosVestuario.getColumnModel().getColumn(3).setPreferredWidth(200);
-        tabelaProdutosVestuario.getColumnModel().getColumn(4).setPreferredWidth(100);
-        tabelaProdutosVestuario.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tabelaProdutosVestuario.getColumnModel().getColumn(6).setPreferredWidth(100);
+        tabelaProdutosVestuario.getColumnModel().getColumn(4).setPreferredWidth(150);
+        tabelaProdutosVestuario.getColumnModel().getColumn(5).setPreferredWidth(200);
+        tabelaProdutosVestuario.getColumnModel().getColumn(6).setPreferredWidth(200);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
  
@@ -63,6 +63,7 @@ public class IURelatorioProdutosVestuario extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Produtos de Vestuário");
+        setPreferredSize(new java.awt.Dimension(700, 300));
 
         tabelaProdutosVestuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -88,14 +89,14 @@ public class IURelatorioProdutosVestuario extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 854, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 650, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
 

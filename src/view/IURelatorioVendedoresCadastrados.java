@@ -19,14 +19,14 @@ public class IURelatorioVendedoresCadastrados extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaVendedoresCadastrados.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaVendedoresCadastrados.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaVendedoresCadastrados.getColumnModel().getColumn(1).setPreferredWidth(300);
         tabelaVendedoresCadastrados.getColumnModel().getColumn(2).setPreferredWidth(300);
         tabelaVendedoresCadastrados.getColumnModel().getColumn(3).setPreferredWidth(300);
-        tabelaVendedoresCadastrados.getColumnModel().getColumn(4).setPreferredWidth(400);
-        tabelaVendedoresCadastrados.getColumnModel().getColumn(5).setPreferredWidth(300);
+        tabelaVendedoresCadastrados.getColumnModel().getColumn(4).setPreferredWidth(300);
+        tabelaVendedoresCadastrados.getColumnModel().getColumn(5).setPreferredWidth(400);
         tabelaVendedoresCadastrados.getColumnModel().getColumn(6).setPreferredWidth(400);
-        tabelaVendedoresCadastrados.getColumnModel().getColumn(7).setPreferredWidth(300);
+        tabelaVendedoresCadastrados.getColumnModel().getColumn(7).setPreferredWidth(400);
         tabelaVendedoresCadastrados.getColumnModel().getColumn(8).setPreferredWidth(200);
         tabelaVendedoresCadastrados.getColumnModel().getColumn(9).setPreferredWidth(200);
         tabelaVendedoresCadastrados.getColumnModel().getColumn(10).setPreferredWidth(300);
@@ -72,6 +72,7 @@ public class IURelatorioVendedoresCadastrados extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Vendedores Cadastrados");
+        setPreferredSize(new java.awt.Dimension(1100, 300));
 
         tabelaVendedoresCadastrados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -96,16 +97,16 @@ public class IURelatorioVendedoresCadastrados extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1143, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1127, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();

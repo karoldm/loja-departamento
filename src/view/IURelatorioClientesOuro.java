@@ -19,15 +19,15 @@ public class IURelatorioClientesOuro extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tabelaClientesOuro.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaClientesOuro.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaClientesOuro.getColumnModel().getColumn(1).setPreferredWidth(300);
-        tabelaClientesOuro.getColumnModel().getColumn(2).setPreferredWidth(300);
-        tabelaClientesOuro.getColumnModel().getColumn(3).setPreferredWidth(300);
-        tabelaClientesOuro.getColumnModel().getColumn(4).setPreferredWidth(400);
+        tabelaClientesOuro.getColumnModel().getColumn(2).setPreferredWidth(200);
+        tabelaClientesOuro.getColumnModel().getColumn(3).setPreferredWidth(200);
+        tabelaClientesOuro.getColumnModel().getColumn(4).setPreferredWidth(200);
         tabelaClientesOuro.getColumnModel().getColumn(5).setPreferredWidth(300);
-        tabelaClientesOuro.getColumnModel().getColumn(6).setPreferredWidth(400);
+        tabelaClientesOuro.getColumnModel().getColumn(6).setPreferredWidth(200);
         tabelaClientesOuro.getColumnModel().getColumn(7).setPreferredWidth(300);
-        tabelaClientesOuro.getColumnModel().getColumn(8).setPreferredWidth(100);
+        tabelaClientesOuro.getColumnModel().getColumn(8).setPreferredWidth(150);
 
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
 
@@ -67,13 +67,15 @@ public class IURelatorioClientesOuro extends javax.swing.JDialog {
         tabelaClientesOuro = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Clientes de Ouro");
+        setPreferredSize(new java.awt.Dimension(1100, 300));
 
         tabelaClientesOuro.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Código", "Nome", "CPF", "RG", "Nascimento", "Endereço", "CEP", "Email", "Title 9"
+                "Código", "Nome", "CPF", "RG", "Nascimento", "Endereço", "CEP", "Email", "Ouro"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -91,16 +93,16 @@ public class IURelatorioClientesOuro extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 914, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 884, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();

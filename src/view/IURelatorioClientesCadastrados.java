@@ -20,15 +20,15 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
 
-        tabelaClientesCadastrados.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tabelaClientesCadastrados.getColumnModel().getColumn(0).setPreferredWidth(150);
         tabelaClientesCadastrados.getColumnModel().getColumn(1).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(2).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(3).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(4).setPreferredWidth(400);
+        tabelaClientesCadastrados.getColumnModel().getColumn(2).setPreferredWidth(200);
+        tabelaClientesCadastrados.getColumnModel().getColumn(3).setPreferredWidth(200);
+        tabelaClientesCadastrados.getColumnModel().getColumn(4).setPreferredWidth(200);
         tabelaClientesCadastrados.getColumnModel().getColumn(5).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(6).setPreferredWidth(400);
+        tabelaClientesCadastrados.getColumnModel().getColumn(6).setPreferredWidth(200);
         tabelaClientesCadastrados.getColumnModel().getColumn(7).setPreferredWidth(300);
-        tabelaClientesCadastrados.getColumnModel().getColumn(8).setPreferredWidth(100);
+        tabelaClientesCadastrados.getColumnModel().getColumn(8).setPreferredWidth(150);
 
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();
 
@@ -68,6 +68,7 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Clientes  Cadastrados");
+        setPreferredSize(new java.awt.Dimension(1100, 300));
 
         tabelaClientesCadastrados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -92,16 +93,16 @@ public class IURelatorioClientesCadastrados extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 831, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 811, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addGap(25, 25, 25)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         pack();
