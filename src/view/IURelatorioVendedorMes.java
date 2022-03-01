@@ -30,6 +30,7 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
         tabelaVendedorMes.getColumnModel().getColumn(8).setPreferredWidth(200);
         tabelaVendedorMes.getColumnModel().getColumn(9).setPreferredWidth(200);
         tabelaVendedorMes.getColumnModel().getColumn(10).setPreferredWidth(300);
+        tabelaVendedorMes.getColumnModel().getColumn(10).setPreferredWidth(100);
          
         DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
  
@@ -46,6 +47,7 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
         tabelaVendedorMes.getColumnModel().getColumn(8).setCellRenderer(c);
         tabelaVendedorMes.getColumnModel().getColumn(9).setCellRenderer(c);
         tabelaVendedorMes.getColumnModel().getColumn(10).setCellRenderer(c);
+        tabelaVendedorMes.getColumnModel().getColumn(11).setCellRenderer(c);
     }
 
     /**
@@ -70,11 +72,11 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
 
             },
             new String [] {
-                "Código", "Nome", "CPF", "RG", "Nascimento", "Endereço", "CEP", "Email", "Salário", "PIS", "Admissão"
+                "Código", "Nome", "CPF", "RG", "Nascimento", "Endereço", "CEP", "Email", "Salário", "PIS", "Admissão", "Vendas"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -101,7 +103,7 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 952, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1080, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)

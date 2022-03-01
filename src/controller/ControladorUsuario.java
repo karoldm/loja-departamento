@@ -9,6 +9,7 @@ import model.LojaDepartamento;
 import model.Usuario;
 import model.Venda;
 import model.Vendedor;
+import model.VendedorMes;
 
 /**
  *
@@ -220,25 +221,27 @@ public class ControladorUsuario {
             }
         }
 
-        ArrayList<Vendedor> vendedoresMes = new ArrayList<>();
+        ArrayList<VendedorMes> vendedoresMes = new ArrayList<>();
 
         if (maioresVendas > 0) {
             for (int i = 1; i < vendasPorVendedor.length; i++) {
                 if (vendasPorVendedor[i] == maioresVendas) {
                     Vendedor vendedor = getVendedorByCodigo(i);
+                    VendedorMes vendedorMes = new VendedorMes(vendedor, maioresVendas);
                     if (vendedor != null) {
-                        vendedoresMes.add(vendedor);
+                        vendedoresMes.add(vendedorMes);
                     }
                 }
             }
         }
 
-        Object[][] vendedoresMesDados = new Object[vendedoresMes.size()][11];
-        Iterator<Vendedor> iteratorVendedoresMes = vendedoresMes.iterator();
+        Object[][] vendedoresMesDados = new Object[vendedoresMes.size()][12];
+        Iterator<VendedorMes> iteratorVendedoresMes = vendedoresMes.iterator();
 
         int i = 0;
         while (iteratorVendedoresMes.hasNext()) {
-            Vendedor v = iteratorVendedoresMes.next();
+            VendedorMes vendedotMesNext = iteratorVendedoresMes.next();
+            Vendedor v = vendedotMesNext.getVendedor();
 
             vendedoresMesDados[i][0] = v.getCodigoUsuario();
             vendedoresMesDados[i][1] = v.getNome();
@@ -251,6 +254,7 @@ public class ControladorUsuario {
             vendedoresMesDados[i][8] = v.getSalario();
             vendedoresMesDados[i][9] = v.getPis();
             vendedoresMesDados[i][10] = v.getDataAdmissao().getTime();
+            vendedoresMesDados[i][11] = vendedotMesNext.getQuantidadeVendas();
             i++;
         }
 
