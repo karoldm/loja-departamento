@@ -22,6 +22,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/adicionar-usuario.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="cliente"/>
               </Properties>
               <Events>
@@ -32,6 +35,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/adicionar-usuario.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="vendedor"/>
               </Properties>
@@ -44,6 +50,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/fornecedor.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="fornecedor"/>
               </Properties>
               <Events>
@@ -54,6 +63,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/produto.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="produto"/>
               </Properties>
@@ -76,6 +88,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/comprar.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="realizar venda"/>
               </Properties>
               <Events>
@@ -97,6 +112,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="produtos cadastrados"/>
               </Properties>
               <Events>
@@ -107,6 +125,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="produtos aliment&#xed;cios"/>
               </Properties>
@@ -119,6 +140,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="produtos eletrodomesticos"/>
               </Properties>
               <Events>
@@ -129,6 +153,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="produtos eletr&#xf4;nicos"/>
               </Properties>
@@ -141,6 +168,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="produtos vestu&#xe1;rio"/>
               </Properties>
               <Events>
@@ -151,6 +181,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="produtos ordenados"/>
               </Properties>
@@ -163,6 +196,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="dez produtos mais vendidos"/>
               </Properties>
               <Events>
@@ -173,6 +209,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="fornecedores cadastrados"/>
               </Properties>
@@ -187,6 +226,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="vendedores cadastrados"/>
               </Properties>
               <Events>
@@ -198,6 +240,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="clientes cadastrados"/>
               </Properties>
               <Events>
@@ -208,6 +253,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="clientes de ouro"/>
               </Properties>
@@ -222,6 +270,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="vendas de um cliente"/>
               </Properties>
               <Events>
@@ -232,6 +283,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="vendas realizadas"/>
               </Properties>
@@ -244,6 +298,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="vendas realizadas em dinheiro"/>
               </Properties>
               <Events>
@@ -254,6 +311,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="vendas realizadas em PIX"/>
               </Properties>
@@ -266,6 +326,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="vendas realizadas em cart&#xe3;o de cr&#xe9;dito"/>
               </Properties>
               <Events>
@@ -277,6 +340,9 @@
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="vendas m&#xea;s"/>
               </Properties>
               <Events>
@@ -287,6 +353,9 @@
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/assets/relatorio.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="vendedor do m&#xea;s"/>
               </Properties>

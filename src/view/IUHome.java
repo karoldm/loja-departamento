@@ -69,6 +69,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuCadastrar.setText("cadastrar");
 
         jMenuItemCadastrarCliente.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemCadastrarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/adicionar-usuario.png"))); // NOI18N
         jMenuItemCadastrarCliente.setText("cliente");
         jMenuItemCadastrarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,6 +79,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuCadastrar.add(jMenuItemCadastrarCliente);
 
         jMenuItemCadastrarVendedor.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemCadastrarVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/adicionar-usuario.png"))); // NOI18N
         jMenuItemCadastrarVendedor.setText("vendedor");
         jMenuItemCadastrarVendedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +89,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuCadastrar.add(jMenuItemCadastrarVendedor);
 
         jMenuItemCadastrarFornecedor.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemCadastrarFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/fornecedor.png"))); // NOI18N
         jMenuItemCadastrarFornecedor.setText("fornecedor");
         jMenuItemCadastrarFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,6 +99,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuCadastrar.add(jMenuItemCadastrarFornecedor);
 
         jMenuItemCadastrarProduto.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemCadastrarProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/produto.png"))); // NOI18N
         jMenuItemCadastrarProduto.setText("produto");
         jMenuItemCadastrarProduto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,6 +114,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuVenda.setText("venda");
 
         jMenuItemRealizarVenda.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRealizarVenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/comprar.png"))); // NOI18N
         jMenuItemRealizarVenda.setText("realizar venda");
         jMenuItemRealizarVenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +129,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.setText("consultar");
 
         jMenuItemRelProdutosCadastrados.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelProdutosCadastrados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelProdutosCadastrados.setText("produtos cadastrados");
         jMenuItemRelProdutosCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,6 +139,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelProdutosCadastrados);
 
         jMenuItemRelProdutosAlimenticios.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelProdutosAlimenticios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelProdutosAlimenticios.setText("produtos alimentícios");
         jMenuItemRelProdutosAlimenticios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,6 +149,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelProdutosAlimenticios);
 
         jMenuItemRelProdutosEletrodomesticos.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelProdutosEletrodomesticos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelProdutosEletrodomesticos.setText("produtos eletrodomesticos");
         jMenuItemRelProdutosEletrodomesticos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,6 +159,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelProdutosEletrodomesticos);
 
         jMenuItemRelProdutosEletronicos.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelProdutosEletronicos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelProdutosEletronicos.setText("produtos eletrônicos");
         jMenuItemRelProdutosEletronicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,6 +169,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelProdutosEletronicos);
 
         jMenuItemRelProdutosVestuario.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelProdutosVestuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelProdutosVestuario.setText("produtos vestuário");
         jMenuItemRelProdutosVestuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,6 +179,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelProdutosVestuario);
 
         jMenuItem2.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItem2.setText("produtos ordenados");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,6 +189,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItem2);
 
         jMenuItemRelProdutosMaisVendidos.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelProdutosMaisVendidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelProdutosMaisVendidos.setText("dez produtos mais vendidos");
         jMenuItemRelProdutosMaisVendidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,6 +199,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelProdutosMaisVendidos);
 
         jMenuItemRelFornecedoresCadastrados.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelFornecedoresCadastrados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelFornecedoresCadastrados.setText("fornecedores cadastrados");
         jMenuItemRelFornecedoresCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,6 +210,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jSeparator1);
 
         jMenuItemRelVendedoresCadastrados.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemRelVendedoresCadastrados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemRelVendedoresCadastrados.setText("vendedores cadastrados");
         jMenuItemRelVendedoresCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,6 +220,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemRelVendedoresCadastrados);
 
         jMenuItemClientesCadastrados.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemClientesCadastrados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemClientesCadastrados.setText("clientes cadastrados");
         jMenuItemClientesCadastrados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,6 +230,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemClientesCadastrados);
 
         jMenuItemClientesOuro.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemClientesOuro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemClientesOuro.setText("clientes de ouro");
         jMenuItemClientesOuro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -225,6 +241,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jSeparator2);
 
         jMenuItemVendasCliente.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendasCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendasCliente.setText("vendas de um cliente");
         jMenuItemVendasCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,6 +251,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemVendasCliente);
 
         jMenuItemVendasRealizadas.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendasRealizadas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendasRealizadas.setText("vendas realizadas");
         jMenuItemVendasRealizadas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,6 +261,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemVendasRealizadas);
 
         jMenuItemVendasDinheiro.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendasDinheiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendasDinheiro.setText("vendas realizadas em dinheiro");
         jMenuItemVendasDinheiro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -252,6 +271,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemVendasDinheiro);
 
         jMenuItemVendasPIX.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendasPIX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendasPIX.setText("vendas realizadas em PIX");
         jMenuItemVendasPIX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -261,6 +281,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemVendasPIX);
 
         jMenuItemVendasCartao.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendasCartao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendasCartao.setText("vendas realizadas em cartão de crédito");
         jMenuItemVendasCartao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -270,6 +291,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemVendasCartao);
 
         jMenuItemVendasMes.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendasMes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendasMes.setText("vendas mês");
         jMenuItemVendasMes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -279,6 +301,7 @@ public class IUHome extends javax.swing.JFrame {
         jMenuConsultar.add(jMenuItemVendasMes);
 
         jMenuItemVendedorMes.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendedorMes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendedorMes.setText("vendedor do mês");
         jMenuItemVendedorMes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
