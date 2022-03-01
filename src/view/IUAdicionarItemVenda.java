@@ -122,7 +122,7 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
 
         jLabel3.setText("Total:");
 
-        jTextFieldValorTotal.setEnabled(false);
+        jTextFieldValorTotal.setFocusable(false);
 
         jLabel4.setText("Código do Cliente:");
 

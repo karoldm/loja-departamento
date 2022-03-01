@@ -115,17 +115,17 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
 
         jLabel1.setText("Código da Venda:");
 
-        jTextFieldCodigoVenda.setEnabled(false);
+        jTextFieldCodigoVenda.setFocusable(false);
 
-        jTextFieldDataVenda.setEnabled(false);
+        jTextFieldDataVenda.setFocusable(false);
 
         jLabel4.setText("Data da Venda:");
 
-        jTextFieldValorTotal.setEnabled(false);
+        jTextFieldValorTotal.setFocusable(false);
 
         jLabel5.setText("Valor Total:");
 
-        jTextFieldValorDesconto.setEnabled(false);
+        jTextFieldValorDesconto.setFocusable(false);
 
         jLabel6.setText("Desconto:");
 

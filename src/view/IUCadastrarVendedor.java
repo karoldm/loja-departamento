@@ -240,9 +240,9 @@ public class IUCadastrarVendedor extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(218, Short.MAX_VALUE)
+                        .addContainerGap(206, Short.MAX_VALUE)
                         .addComponent(jButtonSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(30, 30, 30)
@@ -370,8 +370,6 @@ public class IUCadastrarVendedor extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonCancelar;
     private javax.swing.JButton jButtonSalvar;
-    private javax.swing.JCheckBox jCheckBoxOuro;
-    private javax.swing.JCheckBox jCheckBoxOuro1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -383,58 +381,20 @@ public class IUCadastrarVendedor extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabelCep;
-    private javax.swing.JLabel jLabelCep1;
-    private javax.swing.JLabel jLabelCodigo;
-    private javax.swing.JLabel jLabelCodigo1;
-    private javax.swing.JLabel jLabelCpf;
-    private javax.swing.JLabel jLabelCpf1;
-    private javax.swing.JLabel jLabelEmail;
-    private javax.swing.JLabel jLabelEmail1;
-    private javax.swing.JLabel jLabelEndereco;
-    private javax.swing.JLabel jLabelEndereco1;
-    private javax.swing.JLabel jLabelNascimento;
-    private javax.swing.JLabel jLabelNascimento1;
-    private javax.swing.JLabel jLabelNome;
-    private javax.swing.JLabel jLabelNome1;
-    private javax.swing.JLabel jLabelRg;
-    private javax.swing.JLabel jLabelRg1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextAno;
-    private javax.swing.JTextField jTextAno1;
     private javax.swing.JTextField jTextAnoA;
     private javax.swing.JTextField jTextAnoN;
-    private javax.swing.JTextField jTextCep;
-    private javax.swing.JTextField jTextCep1;
     private javax.swing.JTextField jTextCepVendedor;
-    private javax.swing.JTextField jTextCodigo;
-    private javax.swing.JTextField jTextCodigo1;
     private javax.swing.JTextField jTextCodigoVendedor;
-    private javax.swing.JTextField jTextCpf;
-    private javax.swing.JTextField jTextCpf1;
     private javax.swing.JTextField jTextCpfVendedor;
-    private javax.swing.JTextField jTextDia;
-    private javax.swing.JTextField jTextDia1;
     private javax.swing.JTextField jTextDiaA;
     private javax.swing.JTextField jTextDiaN;
-    private javax.swing.JTextField jTextEmail;
-    private javax.swing.JTextField jTextEmail1;
     private javax.swing.JTextField jTextEmailVendedor;
-    private javax.swing.JTextField jTextEndereco;
-    private javax.swing.JTextField jTextEndereco1;
     private javax.swing.JTextField jTextEnderecoVendedor;
-    private javax.swing.JTextField jTextMes;
-    private javax.swing.JTextField jTextMes1;
     private javax.swing.JTextField jTextMesA;
     private javax.swing.JTextField jTextMesN;
-    private javax.swing.JTextField jTextNome;
-    private javax.swing.JTextField jTextNome1;
     private javax.swing.JTextField jTextNomeVendedor;
     private javax.swing.JTextField jTextPis;
-    private javax.swing.JTextField jTextRg;
-    private javax.swing.JTextField jTextRg1;
     private javax.swing.JTextField jTextRgVendedor;
     private javax.swing.JTextField jTextSalario;
     // End of variables declaration//GEN-END:variables
