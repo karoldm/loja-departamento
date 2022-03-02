@@ -7,6 +7,8 @@ import controller.ControladorVendas;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
+import javax.swing.SwingConstants;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import model.Cliente;
 
@@ -38,6 +40,22 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
     public IUAdicionarItemVenda(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
+        jTableItens.getColumnModel().getColumn(0).setPreferredWidth(150);
+        jTableItens.getColumnModel().getColumn(1).setPreferredWidth(300);
+        jTableItens.getColumnModel().getColumn(2).setPreferredWidth(400);
+        jTableItens.getColumnModel().getColumn(3).setPreferredWidth(200);
+        jTableItens.getColumnModel().getColumn(4).setPreferredWidth(150);
+        
+        DefaultTableCellRenderer c = new DefaultTableCellRenderer();  
+ 
+        c.setHorizontalAlignment(SwingConstants.CENTER);
+        
+        jTableItens.getColumnModel().getColumn(0).setCellRenderer(c);
+        jTableItens.getColumnModel().getColumn(1).setCellRenderer(c);
+        jTableItens.getColumnModel().getColumn(2).setCellRenderer(c);
+        jTableItens.getColumnModel().getColumn(3).setCellRenderer(c);
+        jTableItens.getColumnModel().getColumn(4).setCellRenderer(c);
 
     }
 
