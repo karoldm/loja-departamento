@@ -1,5 +1,7 @@
 package view;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author karol
@@ -339,6 +341,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarClienteActionPerformed
 
         IUCadastrarCliente cad = new IUCadastrarCliente(this, true);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        cad.setIconImage(img.getImage());
         cad.setLocationRelativeTo(this);
         cad.setVisible(true);
 
@@ -347,6 +351,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemCadastrarVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarVendedorActionPerformed
 
         IUCadastrarVendedor cad = new IUCadastrarVendedor(this, true);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        cad.setIconImage(img.getImage());
         cad.setLocationRelativeTo(this);
         cad.setVisible(true);
 
@@ -355,6 +361,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemCadastrarFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarFornecedorActionPerformed
 
         IUCadastrarFornecedor cad = new IUCadastrarFornecedor(this, true);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        cad.setIconImage(img.getImage());
         cad.setLocationRelativeTo(this);
         cad.setVisible(true);
 
@@ -363,6 +371,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemCadastrarProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarProdutoActionPerformed
 
         IUCadastrarProduto cad = new IUCadastrarProduto(this, true);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        cad.setIconImage(img.getImage());
         cad.setLocationRelativeTo(this);
         cad.setVisible(true);
 
@@ -371,6 +381,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRealizarVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRealizarVendaActionPerformed
 
         IUAdicionarItemVenda cad = new IUAdicionarItemVenda(this, true);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        cad.setIconImage(img.getImage());
         cad.setLocationRelativeTo(this);
         cad.setVisible(true);
 
@@ -379,6 +391,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelProdutosCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosCadastradosActionPerformed
 
         IURelatorioProdutosCadastrados rel = new IURelatorioProdutosCadastrados(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -387,6 +401,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelProdutosAlimenticiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosAlimenticiosActionPerformed
 
         IURelatorioProdutosAlimenticios rel = new IURelatorioProdutosAlimenticios(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -395,6 +411,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelProdutosEletrodomesticosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosEletrodomesticosActionPerformed
 
         IURelatorioProdutosEletrodomesticos rel = new IURelatorioProdutosEletrodomesticos(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -403,6 +421,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelProdutosEletronicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosEletronicosActionPerformed
 
         IURelatorioProdutosEletronicos rel = new IURelatorioProdutosEletronicos(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -411,6 +431,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelProdutosVestuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosVestuarioActionPerformed
 
         IURelatorioProdutosVestuario rel = new IURelatorioProdutosVestuario(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -419,6 +441,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelProdutosMaisVendidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelProdutosMaisVendidosActionPerformed
 
         IURelatorioProdutosMaisVendidos rel = new IURelatorioProdutosMaisVendidos(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -427,6 +451,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelFornecedoresCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelFornecedoresCadastradosActionPerformed
 
         IURelatorioFornecedoresCadastrados rel = new IURelatorioFornecedoresCadastrados(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -435,6 +461,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemRelVendedoresCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelVendedoresCadastradosActionPerformed
 
         IURelatorioVendedoresCadastrados rel = new IURelatorioVendedoresCadastrados(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -443,6 +471,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemClientesCadastradosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClientesCadastradosActionPerformed
 
         IURelatorioClientesCadastrados rel = new IURelatorioClientesCadastrados(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -451,6 +481,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemClientesOuroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClientesOuroActionPerformed
 
         IURelatorioClientesOuro rel = new IURelatorioClientesOuro(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -459,6 +491,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemVendasClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasClienteActionPerformed
 
         IURelatorioVendasCliente rel = new IURelatorioVendasCliente(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -467,6 +501,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemVendasRealizadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasRealizadasActionPerformed
 
         IURelatorioVendasRealizadas rel = new IURelatorioVendasRealizadas(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -475,6 +511,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemVendasDinheiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasDinheiroActionPerformed
 
         IURelatorioVendasDinheiro rel = new IURelatorioVendasDinheiro(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -483,6 +521,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemVendasPIXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasPIXActionPerformed
 
         IURelatorioVendasPIX rel = new IURelatorioVendasPIX(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -491,6 +531,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemVendasCartaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasCartaoActionPerformed
 
         IURelatorioVendasCartao rel = new IURelatorioVendasCartao(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -499,6 +541,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemVendasMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendasMesActionPerformed
 
         IURelatorioVendasMes rel = new IURelatorioVendasMes(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -507,6 +551,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItemVendedorMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemVendedorMesActionPerformed
 
         IURelatorioVendedorMes rel = new IURelatorioVendedorMes(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 
@@ -515,6 +561,8 @@ public class IUHome extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
 
         IURelatorioProdutosOrdenados rel = new IURelatorioProdutosOrdenados(this, false);
+        ImageIcon img = new ImageIcon("./src/view/assets/loja.png");
+        rel.setIconImage(img.getImage());
         rel.setLocationRelativeTo(this);
         rel.setVisible(true);
 

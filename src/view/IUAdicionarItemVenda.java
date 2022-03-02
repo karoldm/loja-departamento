@@ -69,23 +69,34 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Adicionar Produtos");
+        setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
 
+        jButtonCancelar.setBackground(new java.awt.Color(245, 66, 66));
+        jButtonCancelar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonCancelar.setText("Cancelar");
+        jButtonCancelar.setBorderPainted(false);
+        jButtonCancelar.setFocusPainted(false);
         jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCancelarActionPerformed(evt);
             }
         });
 
+        jButtonFinalizar.setBackground(new java.awt.Color(63, 201, 60));
+        jButtonFinalizar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonFinalizar.setText("Próximo");
+        jButtonFinalizar.setBorderPainted(false);
         jButtonFinalizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonFinalizarActionPerformed(evt);
             }
         });
 
+        jButtonInserirItem.setBackground(new java.awt.Color(60, 121, 201));
+        jButtonInserirItem.setForeground(new java.awt.Color(255, 255, 255));
         jButtonInserirItem.setText("Inserir Item");
+        jButtonInserirItem.setBorderPainted(false);
         jButtonInserirItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonInserirItemActionPerformed(evt);

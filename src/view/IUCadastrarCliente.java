@@ -55,7 +55,7 @@ public class IUCadastrarCliente extends javax.swing.JDialog {
         jButtonCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("cadastrat cliente");
+        setTitle("Cadastrar Cliente");
         setResizable(false);
 
         jPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastrar Cliente"));
@@ -176,7 +176,10 @@ public class IUCadastrarCliente extends javax.swing.JDialog {
             }
         });
 
+        jButtonCancelar.setBackground(new java.awt.Color(245, 66, 66));
+        jButtonCancelar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonCancelar.setText("Cancelar");
+        jButtonCancelar.setBorderPainted(false);
         jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCancelarActionPerformed(evt);

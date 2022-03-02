@@ -51,7 +51,7 @@ public class IUCadastrarFornecedor extends javax.swing.JDialog {
         jButtonSalvar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("cadastrar fornecedor");
+        setTitle("Cadastrar Fornecedor");
         setResizable(false);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastrar Fornecedor"));
