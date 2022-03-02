@@ -15,6 +15,7 @@ import model.LojaDepartamento;
 import model.Produto;
 import model.Venda;
 import model.Vestuario;
+
 import strategy.Contexto;
 import strategy.OrdenacaoStrategy;
 import strategy.StrategyOrdenacaoInsertionSort;
@@ -79,7 +80,7 @@ public class ControladorProduto {
         Calendar dataFabricacao = Calendar.getInstance();
         dataFabricacao.set(
                 Integer.parseInt(ano),
-                Integer.parseInt(mes),
+                Integer.parseInt(mes)-1,
                 Integer.parseInt(dia));
 
         Produto produto = FactoryProduto.factoryMethod(
@@ -123,10 +124,15 @@ public class ControladorProduto {
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
+            
+            Calendar dataFabricacao = p.getDataFabricacao();
+            
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
-            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
+                    "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
+                    "/"+dataFabricacao.get(Calendar.YEAR));
             produtosDados[i][4] = p.getValor();
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
@@ -146,11 +152,15 @@ public class ControladorProduto {
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
+            
+            Calendar dataFabricacao = p.getDataFabricacao();
 
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
-            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
+                    "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
+                    "/"+dataFabricacao.get(Calendar.YEAR));
             produtosDados[i][4] = p.getValor();
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
@@ -170,11 +180,15 @@ public class ControladorProduto {
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
+            
+            Calendar dataFabricacao = p.getDataFabricacao();
 
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
-            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
+                    "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
+                    "/"+dataFabricacao.get(Calendar.YEAR));
             produtosDados[i][4] = p.getValor();
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
@@ -194,11 +208,15 @@ public class ControladorProduto {
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
+            
+            Calendar dataFabricacao = p.getDataFabricacao();
 
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
-            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
+                    "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
+                    "/"+dataFabricacao.get(Calendar.YEAR));
             produtosDados[i][4] = p.getValor();
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
@@ -218,11 +236,15 @@ public class ControladorProduto {
         int i = 0;
         while (iterator.hasNext()) {
             Produto p = iterator.next();
+            
+            Calendar dataFabricacao = p.getDataFabricacao();
 
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
-            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
+                    "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
+                    "/"+dataFabricacao.get(Calendar.YEAR));
             produtosDados[i][4] = p.getValor();
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
@@ -292,11 +314,15 @@ public class ControladorProduto {
             quantidadeVendasPorProduto[indiceMaior] = 0;
             
             Produto p = getProdutoByCodigo(indiceMaior);
-
+            
+            Calendar dataFabricacao = p.getDataFabricacao();
+            
             dados[i][0] = p.getCodigoProduto();
             dados[i][1] = p.getNome();
             dados[i][2] = p.getDescricao();
-            dados[i][3] = p.getDataFabricacao().getTime();
+            dados[i][3] = (dataFabricacao.get(Calendar.DATE)+
+                    "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
+                    "/"+dataFabricacao.get(Calendar.YEAR));
             dados[i][4] = p.getValor();
             dados[i][5] = p.getFornecedor().getNome();
             dados[i][6] = p.isDisponivel();
@@ -358,10 +384,14 @@ public class ControladorProduto {
         while (iterator.hasNext()) {
             Produto p = iterator.next();
 
+            Calendar dataFabricacao = p.getDataFabricacao();
+            
             produtosDados[i][0] = p.getCodigoProduto();
             produtosDados[i][1] = p.getNome();
             produtosDados[i][2] = p.getDescricao();
-            produtosDados[i][3] = p.getDataFabricacao().getTime();
+            produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
+                    "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
+                    "/"+dataFabricacao.get(Calendar.YEAR));
             produtosDados[i][4] = p.getValor();
             produtosDados[i][5] = p.getFornecedor();
             produtosDados[i][6] = p.isDisponivel();

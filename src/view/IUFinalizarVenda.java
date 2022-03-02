@@ -22,7 +22,7 @@ import model.Vendedor;
  * @author karol
  */
 public class IUFinalizarVenda extends javax.swing.JDialog {
-
+ 
     private ControladorVendas controllerVendas = new ControladorVendas();
     private ControladorUsuario controllerUsuarios = new ControladorUsuario();
     private Pagamento pagamento;
@@ -54,6 +54,7 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
         this.vendedor = vendedor;
         
         Calendar data = Calendar.getInstance();
+        data.set(data.get(Calendar.YEAR), data.get(Calendar.MONTH), data.get(Calendar.DATE));
 
         venda = new Venda(
                 controllerVendas.getTamanhoVendas(),
@@ -67,7 +68,7 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
         jTextFieldValorTotal.setText(Float.toString(venda.calcularValorTotal()));
         jTextFieldValorDesconto.setText(Float.toString(venda.getValorDesconto()));
         jTextFieldDataVenda.setText(
-                data.DATE + "/" + data.MONTH + "/" + data.YEAR);
+                data.get(Calendar.DATE) + "/" + (data.get(Calendar.MONTH)+1) + "/" + data.get(Calendar.YEAR));
         
         pagamento = new Dinheiro();
     }
@@ -342,7 +343,6 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
     }//GEN-LAST:event_jComboBoxPagamentoActionPerformed
 
     private void jButtonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFinalizarActionPerformed
-        String codigoVenda = jTextFieldCodigoVenda.getText();
 
         if (jComboBoxPagamento.getSelectedItem().equals("Cartão de Crédito")) {
             String nome = jTextFieldNomeCC.getText();

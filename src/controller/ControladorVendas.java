@@ -2,6 +2,7 @@
 package controller;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Iterator;
 import model.LojaDepartamento;
 import model.Venda;
@@ -35,10 +36,14 @@ public class ControladorVendas {
         while (iterator.hasNext()) {
             Venda v = iterator.next();
 
+            Calendar dataVenda = v.getDataVenda();
+            
             vendasDados[i][0] = v.getCodigoVenda();
             vendasDados[i][1] = v.getCliente().getNome();
             vendasDados[i][2] = v.getVendedor().getNome();
-            vendasDados[i][3] = v.getDataVenda().getTime();
+            vendasDados[i][3] = (dataVenda.get(Calendar.DATE)+
+                    "/"+(dataVenda.get(Calendar.MONTH)+1)+
+                    "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
             vendasDados[i][5] = v.getValorTotal();
             vendasDados[i][6] = v.getValorDesconto();
@@ -61,10 +66,14 @@ public class ControladorVendas {
         while (iterator.hasNext()) {
             Venda v = iterator.next();
 
+            Calendar dataVenda = v.getDataVenda();
+            
             vendasDados[i][0] = v.getCodigoVenda();
             vendasDados[i][1] = v.getCliente().getNome();
             vendasDados[i][2] = v.getVendedor().getNome();
-            vendasDados[i][3] = v.getDataVenda().getTime();
+            vendasDados[i][3] = (dataVenda.get(Calendar.DATE)+
+                    "/"+(dataVenda.get(Calendar.MONTH)+1)+
+                    "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
             vendasDados[i][5] = v.getValorTotal();
             vendasDados[i][6] = v.getValorDesconto();
@@ -86,11 +95,15 @@ public class ControladorVendas {
         int i = 0;
         while (iterator.hasNext()) {
             Venda v = iterator.next();
+            
+            Calendar dataVenda = v.getDataVenda();
 
             vendasDados[i][0] = v.getCodigoVenda();
             vendasDados[i][1] = v.getCliente().getNome();
             vendasDados[i][2] = v.getVendedor().getNome();
-            vendasDados[i][3] = v.getDataVenda().getTime();
+            vendasDados[i][3] = (dataVenda.get(Calendar.DATE)+
+                    "/"+(dataVenda.get(Calendar.MONTH)+1)+
+                    "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
             vendasDados[i][5] = v.getValorTotal();
             vendasDados[i][6] = v.getValorDesconto();
@@ -113,10 +126,14 @@ public class ControladorVendas {
         while (iterator.hasNext()) {
             Venda v = iterator.next();
 
+            Calendar dataVenda = v.getDataVenda();
+            
             vendasDados[i][0] = v.getCodigoVenda();
             vendasDados[i][1] = v.getCliente().getNome();
             vendasDados[i][2] = v.getVendedor().getNome();
-            vendasDados[i][3] = v.getDataVenda().getTime();
+            vendasDados[i][3] = (dataVenda.get(Calendar.DATE)+
+                    "/"+(dataVenda.get(Calendar.MONTH)+1)+
+                    "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
             vendasDados[i][5] = v.getValorTotal();
             vendasDados[i][6] = v.getValorDesconto();
@@ -137,11 +154,15 @@ public class ControladorVendas {
         int i = 0;
         while (iterator.hasNext()) {
             Venda v = iterator.next();
+            
+            Calendar dataVenda = v.getDataVenda();
 
             vendasDados[i][0] = v.getCodigoVenda();
             vendasDados[i][1] = v.getCliente().getNome();
             vendasDados[i][2] = v.getVendedor().getNome();
-            vendasDados[i][3] = v.getDataVenda().getTime();
+            vendasDados[i][3] = (dataVenda.get(Calendar.DATE)+
+                    "/"+(dataVenda.get(Calendar.MONTH)+1)+
+                    "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
             vendasDados[i][5] = v.getValorTotal();
             vendasDados[i][6] = v.getValorDesconto();
@@ -162,11 +183,15 @@ public class ControladorVendas {
         int i = 0;
         while (iterator.hasNext()) {
             Venda v = iterator.next();
+            
+            Calendar dataVenda = v.getDataVenda();
 
             vendasDados[i][0] = v.getCodigoVenda();
             vendasDados[i][1] = v.getCliente().getNome();
             vendasDados[i][2] = v.getVendedor().getNome();
-            vendasDados[i][3] = v.getDataVenda().getTime();
+            vendasDados[i][3] = (dataVenda.get(Calendar.DATE)+
+                    "/"+(dataVenda.get(Calendar.MONTH)+1)+
+                    "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
             vendasDados[i][5] = v.getValorTotal();
             vendasDados[i][6] = v.getValorDesconto();
