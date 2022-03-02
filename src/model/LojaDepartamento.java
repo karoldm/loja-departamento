@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Iterator;
 import loja.Configuracao;
 import serializacao.Serializacao;
@@ -258,7 +259,7 @@ public class LojaDepartamento {
         while (iterator.hasNext()) {
             Venda v = iterator.next();
 
-            if (v.getDataVenda().MONTH == Integer.parseInt(mes)) {
+            if ((v.getDataVenda().get(Calendar.MONTH)+1) == Integer.parseInt(mes)) {
                 vendasMes.add(v);
             }
         }
