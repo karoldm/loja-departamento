@@ -242,14 +242,14 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
                 produtoRow[0] = produto.getCodigoProduto();
                 produtoRow[1] = produto.getNome();
                 produtoRow[2] = produto.getDescricao();
-                produtoRow[3] = produto.getValor();
+                produtoRow[3] = String.format("%.2f", produto.getValor());
                 produtoRow[4] = quantidade;
 
                 tableModel.addRow(produtoRow);
 
                 total += item.calcularTotal();
 
-                jTextFieldValorTotal.setText(Float.toString(total));
+                jTextFieldValorTotal.setText(String.format("%.2f", total));
 
                 jTextFieldCodigoProduto.setText("");
                 jTextFieldQuantidade.setText("");

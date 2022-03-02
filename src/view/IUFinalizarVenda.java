@@ -65,8 +65,8 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
         );
 
         jTextFieldCodigoVenda.setText(Integer.toString(venda.getCodigoVenda()));
-        jTextFieldValorTotal.setText(Float.toString(venda.calcularValorTotal()));
-        jTextFieldValorDesconto.setText(Float.toString(venda.getValorDesconto()));
+        jTextFieldValorTotal.setText(String.format("%.2f", venda.calcularValorTotal()));
+        jTextFieldValorDesconto.setText(String.format("%.2f", venda.getValorDesconto()));
         jTextFieldDataVenda.setText(
                 data.get(Calendar.DATE) + "/" + (data.get(Calendar.MONTH)+1) + "/" + data.get(Calendar.YEAR));
         

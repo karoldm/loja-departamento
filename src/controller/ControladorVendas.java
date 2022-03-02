@@ -45,8 +45,8 @@ public class ControladorVendas {
                     "/"+(dataVenda.get(Calendar.MONTH)+1)+
                     "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
-            vendasDados[i][5] = v.getValorTotal();
-            vendasDados[i][6] = v.getValorDesconto();
+            vendasDados[i][5] = String.format("%.2f", v.getValorTotal());
+            vendasDados[i][6] = String.format("%.2f", v.getValorDesconto());
             vendasDados[i][7] = v.getFormaPagamento().getTipoPagamento();
             i++;
         }
@@ -75,8 +75,8 @@ public class ControladorVendas {
                     "/"+(dataVenda.get(Calendar.MONTH)+1)+
                     "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
-            vendasDados[i][5] = v.getValorTotal();
-            vendasDados[i][6] = v.getValorDesconto();
+            vendasDados[i][5] = String.format("%.2f", v.getValorTotal());
+            vendasDados[i][6] = String.format("%.2f", v.getValorDesconto());
             vendasDados[i][7] = v.getFormaPagamento().getTipoPagamento();
             i++;
         }
@@ -105,8 +105,8 @@ public class ControladorVendas {
                     "/"+(dataVenda.get(Calendar.MONTH)+1)+
                     "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
-            vendasDados[i][5] = v.getValorTotal();
-            vendasDados[i][6] = v.getValorDesconto();
+            vendasDados[i][5] = String.format("%.2f", v.getValorTotal());
+            vendasDados[i][6] = String.format("%.2f", v.getValorDesconto());
             vendasDados[i][7] = v.getFormaPagamento().getTipoPagamento();
             i++;
         }
@@ -135,8 +135,8 @@ public class ControladorVendas {
                     "/"+(dataVenda.get(Calendar.MONTH)+1)+
                     "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
-            vendasDados[i][5] = v.getValorTotal();
-            vendasDados[i][6] = v.getValorDesconto();
+            vendasDados[i][5] = String.format("%.2f", v.getValorTotal());
+            vendasDados[i][6] = String.format("%.2f", v.getValorDesconto());
             vendasDados[i][7] = v.getFormaPagamento().getTipoPagamento();
             i++;
         }
@@ -164,8 +164,8 @@ public class ControladorVendas {
                     "/"+(dataVenda.get(Calendar.MONTH)+1)+
                     "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
-            vendasDados[i][5] = v.getValorTotal();
-            vendasDados[i][6] = v.getValorDesconto();
+            vendasDados[i][5] = String.format("%.2f", v.getValorTotal());
+            vendasDados[i][6] = String.format("%.2f", v.getValorDesconto());
             vendasDados[i][7] = v.getFormaPagamento().getTipoPagamento();
             i++;
         }
@@ -193,8 +193,8 @@ public class ControladorVendas {
                     "/"+(dataVenda.get(Calendar.MONTH)+1)+
                     "/"+dataVenda.get(Calendar.YEAR));
             vendasDados[i][4] = v.getItensVenda();
-            vendasDados[i][5] = v.getValorTotal();
-            vendasDados[i][6] = v.getValorDesconto();
+            vendasDados[i][5] = String.format("%.2f", v.getValorTotal());
+            vendasDados[i][6] = String.format("%.2f", v.getValorDesconto());
             vendasDados[i][7] = v.getFormaPagamento().getTipoPagamento();
             i++;
         }

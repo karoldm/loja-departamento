@@ -133,7 +133,7 @@ public class ControladorProduto {
             produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
                     "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
                     "/"+dataFabricacao.get(Calendar.YEAR));
-            produtosDados[i][4] = p.getValor();
+            produtosDados[i][4] = String.format("%.2f", p.getValor());
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
             i++;
@@ -161,7 +161,7 @@ public class ControladorProduto {
             produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
                     "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
                     "/"+dataFabricacao.get(Calendar.YEAR));
-            produtosDados[i][4] = p.getValor();
+            produtosDados[i][4] = String.format("%.2f", p.getValor());
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
             i++;
@@ -189,7 +189,7 @@ public class ControladorProduto {
             produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
                     "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
                     "/"+dataFabricacao.get(Calendar.YEAR));
-            produtosDados[i][4] = p.getValor();
+            produtosDados[i][4] = String.format("%.2f", p.getValor());
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
             i++;
@@ -217,7 +217,7 @@ public class ControladorProduto {
             produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
                     "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
                     "/"+dataFabricacao.get(Calendar.YEAR));
-            produtosDados[i][4] = p.getValor();
+            produtosDados[i][4] = String.format("%.2f", p.getValor());
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
             i++;
@@ -245,7 +245,7 @@ public class ControladorProduto {
             produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
                     "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
                     "/"+dataFabricacao.get(Calendar.YEAR));
-            produtosDados[i][4] = p.getValor();
+            produtosDados[i][4] = String.format("%.2f", p.getValor());
             produtosDados[i][5] = p.getFornecedor().getNome();
             produtosDados[i][6] = p.isDisponivel();
             i++;
@@ -323,7 +323,7 @@ public class ControladorProduto {
             dados[i][3] = (dataFabricacao.get(Calendar.DATE)+
                     "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
                     "/"+dataFabricacao.get(Calendar.YEAR));
-            dados[i][4] = p.getValor();
+            dados[i][4] = String.format("%.2f", p.getValor());
             dados[i][5] = p.getFornecedor().getNome();
             dados[i][6] = p.isDisponivel();
             
@@ -392,7 +392,7 @@ public class ControladorProduto {
             produtosDados[i][3] = (dataFabricacao.get(Calendar.DATE)+
                     "/"+(dataFabricacao.get(Calendar.MONTH)+1)+
                     "/"+dataFabricacao.get(Calendar.YEAR));
-            produtosDados[i][4] = p.getValor();
+            produtosDados[i][4] = String.format("%.2f", p.getValor());
             produtosDados[i][5] = p.getFornecedor();
             produtosDados[i][6] = p.isDisponivel();
             i++;

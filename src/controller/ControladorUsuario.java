@@ -128,7 +128,7 @@ public class ControladorUsuario {
             vendedoresDados[i][5] = v.getEndereco();
             vendedoresDados[i][6] = v.getCep();
             vendedoresDados[i][7] = v.getEmail();
-            vendedoresDados[i][8] = v.getSalario();
+            vendedoresDados[i][8] = String.format("%.2f", v.getSalario());
             vendedoresDados[i][9] = v.getPis();
             vendedoresDados[i][10] = (dataAdmissao.get(Calendar.DATE)+
                     "/"+(dataAdmissao.get(Calendar.MONTH)+1)+ 
@@ -271,7 +271,7 @@ public class ControladorUsuario {
             vendedoresMesDados[i][5] = v.getEndereco();
             vendedoresMesDados[i][6] = v.getCep();
             vendedoresMesDados[i][7] = v.getEmail();
-            vendedoresMesDados[i][8] = v.getSalario();
+            vendedoresMesDados[i][8] = String.format("%.2f", v.getSalario());
             vendedoresMesDados[i][9] = v.getPis();
             vendedoresMesDados[i][10] = (dataAdmissao.get(Calendar.DATE)+
                     "/"+(dataAdmissao.get(Calendar.MONTH)+1)+
