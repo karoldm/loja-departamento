@@ -250,7 +250,7 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
             Produto produto = controllerProdutos.getProdutoByCodigo(
                     Integer.parseInt(codigoProduto));
 
-            if (produto != null) {
+            if (produto != null && produto.isDisponivel()) {
                 ItemVenda item = new ItemVenda(produto, Integer.parseInt(quantidade));
                 itens.add(item);
 
@@ -273,7 +273,9 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
                 jTextFieldQuantidade.setText("");
 
             } else {
-                JOptionPane.showMessageDialog(null, "Produto não encontrado!", null, JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Produto não encontrado ou indisponivel!", null, JOptionPane.ERROR_MESSAGE);
+                jTextFieldCodigoProduto.setText("");
+                jTextFieldQuantidade.setText("");
             }
         } else {
             JOptionPane.showMessageDialog(null, "Todos os campos precisam ser preenchidos", null, JOptionPane.ERROR_MESSAGE);
