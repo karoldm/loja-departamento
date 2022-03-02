@@ -62,7 +62,6 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Vendas Realizadas por Mês");
-        setPreferredSize(new java.awt.Dimension(900, 300));
 
         tabelaVendasMes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -91,7 +90,10 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(60, 121, 201));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Buscar");
+        jButton1.setBorderPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

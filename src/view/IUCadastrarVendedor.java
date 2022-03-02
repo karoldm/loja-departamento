@@ -219,14 +219,20 @@ public class IUCadastrarVendedor extends javax.swing.JDialog {
                 .addGap(25, 25, 25))
         );
 
+        jButtonCancelar.setBackground(new java.awt.Color(245, 66, 66));
+        jButtonCancelar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonCancelar.setText("cancelar");
+        jButtonCancelar.setBorderPainted(false);
         jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCancelarActionPerformed(evt);
             }
         });
 
+        jButtonSalvar.setBackground(new java.awt.Color(63, 201, 60));
+        jButtonSalvar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonSalvar.setText("salvar");
+        jButtonSalvar.setBorderPainted(false);
         jButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSalvarActionPerformed(evt);

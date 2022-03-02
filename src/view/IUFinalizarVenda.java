@@ -251,14 +251,20 @@ public class IUFinalizarVenda extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
+        jButtonCancelar.setBackground(new java.awt.Color(245, 66, 66));
+        jButtonCancelar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonCancelar.setText("Cancelar");
+        jButtonCancelar.setBorderPainted(false);
         jButtonCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCancelarActionPerformed(evt);
             }
         });
 
+        jButtonFinalizar.setBackground(new java.awt.Color(63, 201, 60));
+        jButtonFinalizar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonFinalizar.setText("Finalizar");
+        jButtonFinalizar.setBorderPainted(false);
         jButtonFinalizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonFinalizarActionPerformed(evt);

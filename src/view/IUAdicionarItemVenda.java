@@ -263,11 +263,34 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
     }//GEN-LAST:event_jButtonInserirItemActionPerformed
 
     private void jButtonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFinalizarActionPerformed
-        if (itens.size() > 0 && cliente != null && vendedor != null) {
+        String codigoVendedor = jTextFieldCodigoVendedor.getText();
+        String codigoCliente = jTextFieldCodigoCliente.getText();
+
+        if (itens.size() > 0 && !codigoVendedor.isEmpty() && !codigoCliente.isEmpty()) {
+
+            Usuario usuarioVendedor = controllerUsuarios.getUsuarioByCodigo(Integer.parseInt(codigoVendedor));
+            Usuario usuarioCliente = controllerUsuarios.getUsuarioByCodigo(Integer.parseInt(codigoCliente));
+
+            if (usuarioVendedor == null || !(usuarioVendedor instanceof Vendedor)) {
+                JOptionPane.showMessageDialog(null, "Vendedor não  encontrado!", null, JOptionPane.ERROR_MESSAGE);
+                jTextFieldCodigoVendedor.setText("");
+                return;
+            } else {
+                vendedor = (Vendedor) usuarioVendedor;
+            }
+
+            if (usuarioCliente == null || !(usuarioCliente instanceof Cliente)) {
+                JOptionPane.showMessageDialog(null, "Cliente não  encontrado!", null, JOptionPane.ERROR_MESSAGE);
+                jTextFieldCodigoCliente.setText("");
+                return;
+            } else {
+                cliente = (Cliente) usuarioCliente;
+            }
+
             IUFinalizarVenda cad = new IUFinalizarVenda(null, true, itens, cliente, vendedor);
             cad.setLocationRelativeTo(this);
             cad.setVisible(true);
-            
+
             this.dispose();
         } else {
             JOptionPane.showMessageDialog(null, "Por favor preencha todos os campos!", null, JOptionPane.ERROR_MESSAGE);
@@ -275,28 +298,11 @@ public class IUAdicionarItemVenda extends javax.swing.JDialog {
     }//GEN-LAST:event_jButtonFinalizarActionPerformed
 
     private void jTextFieldCodigoVendedorFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldCodigoVendedorFocusLost
-        String codigo = jTextFieldCodigoVendedor.getText();
-        Usuario usuario = controllerUsuarios.getUsuarioByCodigo(Integer.parseInt(codigo));
 
-        if (usuario == null || !(usuario instanceof Vendedor) || codigo.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Vendedor não  encontrado!", null, JOptionPane.ERROR_MESSAGE);
-            jTextFieldCodigoVendedor.setText("");
-        } else {
-            vendedor = (Vendedor) usuario;
-        }
     }//GEN-LAST:event_jTextFieldCodigoVendedorFocusLost
 
     private void jTextFieldCodigoClienteFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldCodigoClienteFocusLost
-        String codigo = jTextFieldCodigoCliente.getText();
-        Usuario usuario = controllerUsuarios.getUsuarioByCodigo(Integer.parseInt(codigo));
 
-        if (usuario == null || !(usuario instanceof Cliente) || codigo.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Cliente não  encontrado!", null, JOptionPane.ERROR_MESSAGE);
-            jTextFieldCodigoCliente.setText("");
-        }
-        else {
-            cliente = (Cliente) usuario;
-        }
     }//GEN-LAST:event_jTextFieldCodigoClienteFocusLost
 
     private void jTextFieldCodigoProdutoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextFieldCodigoProdutoFocusLost

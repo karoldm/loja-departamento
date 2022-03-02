@@ -169,7 +169,10 @@ public class IUCadastrarCliente extends javax.swing.JDialog {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jButtonSalvar.setBackground(new java.awt.Color(63, 201, 60));
+        jButtonSalvar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonSalvar.setText("Salvar");
+        jButtonSalvar.setBorderPainted(false);
         jButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSalvarActionPerformed(evt);

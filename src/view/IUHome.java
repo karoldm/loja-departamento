@@ -45,25 +45,23 @@ public class IUHome extends javax.swing.JFrame {
         jMenuItemRelFornecedoresCadastrados = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItemRelVendedoresCadastrados = new javax.swing.JMenuItem();
+        jMenuItemVendedorMes = new javax.swing.JMenuItem();
         jMenuItemClientesCadastrados = new javax.swing.JMenuItem();
         jMenuItemClientesOuro = new javax.swing.JMenuItem();
-        jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jMenuItemVendasCliente = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jMenuItemVendasRealizadas = new javax.swing.JMenuItem();
         jMenuItemVendasDinheiro = new javax.swing.JMenuItem();
         jMenuItemVendasPIX = new javax.swing.JMenuItem();
         jMenuItemVendasCartao = new javax.swing.JMenuItem();
         jMenuItemVendasMes = new javax.swing.JMenuItem();
-        jMenuItemVendedorMes = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Loja Departamento");
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(626, 469));
         setResizable(false);
 
         labelBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/background.jpg"))); // NOI18N
-        labelBackground.setPreferredSize(new java.awt.Dimension(626, 469));
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -223,6 +221,16 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemRelVendedoresCadastrados);
 
+        jMenuItemVendedorMes.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItemVendedorMes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
+        jMenuItemVendedorMes.setText("vendedor do mês");
+        jMenuItemVendedorMes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemVendedorMesActionPerformed(evt);
+            }
+        });
+        jMenuConsultar.add(jMenuItemVendedorMes);
+
         jMenuItemClientesCadastrados.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemClientesCadastrados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemClientesCadastrados.setText("clientes cadastrados");
@@ -243,9 +251,6 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemClientesOuro);
 
-        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        jMenuConsultar.add(jSeparator2);
-
         jMenuItemVendasCliente.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendasCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
         jMenuItemVendasCliente.setText("vendas de um cliente");
@@ -255,6 +260,9 @@ public class IUHome extends javax.swing.JFrame {
             }
         });
         jMenuConsultar.add(jMenuItemVendasCliente);
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
+        jMenuConsultar.add(jSeparator2);
 
         jMenuItemVendasRealizadas.setBackground(new java.awt.Color(255, 255, 255));
         jMenuItemVendasRealizadas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
@@ -306,16 +314,6 @@ public class IUHome extends javax.swing.JFrame {
         });
         jMenuConsultar.add(jMenuItemVendasMes);
 
-        jMenuItemVendedorMes.setBackground(new java.awt.Color(255, 255, 255));
-        jMenuItemVendedorMes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/assets/relatorio.png"))); // NOI18N
-        jMenuItemVendedorMes.setText("vendedor do mês");
-        jMenuItemVendedorMes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemVendedorMesActionPerformed(evt);
-            }
-        });
-        jMenuConsultar.add(jMenuItemVendedorMes);
-
         jMenuBar1.add(jMenuConsultar);
 
         setJMenuBar(jMenuBar1);
@@ -325,7 +323,7 @@ public class IUHome extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(labelBackground, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(labelBackground)
                 .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(

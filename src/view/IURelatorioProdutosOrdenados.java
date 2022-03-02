@@ -61,7 +61,6 @@ public class IURelatorioProdutosOrdenados extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Produtos Ordenados por Valor");
-        setPreferredSize(new java.awt.Dimension(700, 300));
 
         tabelaProdutosOrdenados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -85,7 +84,10 @@ public class IURelatorioProdutosOrdenados extends javax.swing.JDialog {
 
         comboBoxAlgoritmo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Quick Sort", "Insertion Sort" }));
 
+        buttonOrdenar.setBackground(new java.awt.Color(60, 121, 201));
+        buttonOrdenar.setForeground(new java.awt.Color(255, 255, 255));
         buttonOrdenar.setText("Ordenar");
+        buttonOrdenar.setBorderPainted(false);
         buttonOrdenar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonOrdenarActionPerformed(evt);

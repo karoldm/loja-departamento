@@ -67,7 +67,6 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Vendedor do Mês");
-        setPreferredSize(new java.awt.Dimension(1250, 300));
 
         tabelaVendedorMes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -91,7 +90,10 @@ public class IURelatorioVendedorMes extends javax.swing.JDialog {
 
         jComboBoxMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
+        buttonBuscar.setBackground(new java.awt.Color(60, 121, 201));
+        buttonBuscar.setForeground(new java.awt.Color(255, 255, 255));
         buttonBuscar.setText("Buscar");
+        buttonBuscar.setBorderPainted(false);
         buttonBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonBuscarActionPerformed(evt);
