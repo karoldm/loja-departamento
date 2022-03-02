@@ -170,7 +170,7 @@ public class IURelatorioVendasMes extends javax.swing.JDialog {
         
         for(int i = 0; i < row.length; i++){
             modelo.addRow(row[i]);
-            total += (float)row[i][5];
+            total += Float.parseFloat((row[i][5].toString().replace(",", ".")));
         }
         
         jTextFieldLucro.setText(Float.toString(total));
